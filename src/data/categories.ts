@@ -33,7 +33,7 @@ export const TRANSLATIONS: Record<Language, Translations> = {
     siteSubtitle: 'Community Resources',
     skipToContent: 'Skip to main content',
     searchLabel: 'Search community resources',
-    searchPlaceholder: 'Search by organization, category, or ZIP code (e.g. 72756, Food)...',
+    searchPlaceholder: 'Organization, category, or ZIP code',
     clearSearch: 'Clear search',
     resultsCount: (shown, total) =>
       `Showing ${shown} of ${total} ${total === 1 ? 'resource' : 'resources'}`,
@@ -63,7 +63,7 @@ export const TRANSLATIONS: Record<Language, Translations> = {
     siteSubtitle: 'Recursos',
     skipToContent: 'Saltar al contenido principal',
     searchLabel: 'Buscar recursos comunitarios',
-    searchPlaceholder: 'Buscar por organización, categoría o código postal (ej. 72756, Alimentos)...',
+    searchPlaceholder: 'Organización, categoría o código postal',
     clearSearch: 'Borrar búsqueda',
     resultsCount: (shown, total) =>
       `Mostrando ${shown} de ${total} ${total === 1 ? 'recurso' : 'recursos'}`,
