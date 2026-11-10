@@ -119,3 +119,20 @@ svdp_rogers_resource_page/
     }
 ]
 ```
+
+## Running
+To run locally, you must have node installed. Before running the application, run
+```bash
+npm install
+```
+Then, to test the application locally, run
+```bash
+npm run dev
+```
+
+## Deploying
+To deploy the application to GitHub Pages, run:
+```bash
+npm run deploy
+```
+This will automatically build the project (`npm run build`) and publish the `dist/` directory to the `gh-pages` branch.

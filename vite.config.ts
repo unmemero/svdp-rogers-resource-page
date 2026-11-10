@@ -3,5 +3,6 @@ import { defineConfig } from 'vite'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/svdp-rogers-resource-page/',
   plugins: [react()],
 })
