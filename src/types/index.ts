@@ -17,7 +17,6 @@ export interface Translations {
   skipToContent: string
   searchLabel: string
   searchPlaceholder: string
-  searchHint: string
   clearSearch: string
   resultsCount: (shown: number, total: number) => string
   noResultsTitle: string
@@ -35,7 +34,7 @@ export interface Translations {
   feedbackButton: string
   feedbackSubject: string
   languageToggleLabel: string
-  disclaimerAvailability: string
   disclaimerAccuracy: string
+  footerAttribution: (lastUpdate: string) => string
 }
 

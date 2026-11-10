@@ -119,8 +119,17 @@ npm run dev
 ```
 
 ## Deploying
-To deploy the application to GitHub Pages, run:
+
+### Automatic Deployment (GitHub Actions)
+The workflow in `.github/workflows/deploy.yml` handles CI checks and GitHub Pages deployment automatically:
+1. **In your GitHub repository settings**, go to **Settings → Pages** and set **Build and deployment → Source** to **GitHub Actions**.
+2. **Pull Requests to `main`**: Runs `npm run lint` and `npm run build` whenever a PR is opened or updated (without deploying).
+3. **Direct Push to `main`**: Runs the lint and build checks first; if any check fails, the deployment is blocked.
+4. **PR Merged into `main`**: Skips redundant checks (since they already ran on the PR) and proceeds straight to building and deploying to GitHub Pages.
+
+### Manual Deployment (`gh-pages` branch)
+You can also deploy manually from your terminal by running:
 ```bash
 npm run deploy
 ```
-This will automatically build the project (`npm run build`) and publish the `dist/` directory to the `gh-pages` branch.
+This builds the project (`npm run build`) and publishes the `dist/` directory to the `gh-pages` branch.

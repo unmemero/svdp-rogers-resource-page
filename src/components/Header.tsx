@@ -14,7 +14,7 @@ export function Header({ language, t, onToggleLanguage }: HeaderProps) {
       <a href="#main-heading" className="visually-hidden skip-link">
         {t.skipToContent}
       </a>
-      <div className="mx-auto flex max-w-5xl flex-col gap-4 px-4 py-5 sm:flex-row sm:items-center sm:justify-between sm:px-6">
+      <div className="mx-auto flex max-w-5xl flex-col items-center justify-center gap-4 px-4 py-5 text-center sm:px-6">
         <div className="min-w-0">
           <h1
             id="main-heading"
@@ -26,7 +26,7 @@ export function Header({ language, t, onToggleLanguage }: HeaderProps) {
           <p className="mt-1 text-sm text-sky-100 sm:text-base">{t.siteSubtitle}</p>
         </div>
 
-        <div className="toolbar flex flex-wrap items-center gap-3">
+        <div className="toolbar flex flex-wrap items-center justify-center gap-3">
           <LanguageToggle
             language={language}
             label={t.languageToggleLabel}

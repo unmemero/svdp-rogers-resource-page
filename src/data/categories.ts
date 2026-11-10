@@ -1,6 +1,8 @@
 import type { Language, Translations } from '../types'
 
 export const FEEDBACK_EMAIL = 'feedback@svdp-rogers.org'
+export const LAST_UPDATED = 'November 2026'
+export const LAST_UPDATED_ES = 'Noviembre 2026'
 
 export const CATEGORIES = {
   en: [
@@ -27,12 +29,11 @@ export const CATEGORIES = {
 
 export const TRANSLATIONS: Record<Language, Translations> = {
   en: {
-    siteTitle: 'Society of St. Vincent de Paul',
-    siteSubtitle: 'Mother Teresa Conference – Rogers, AR Community Resources',
+    siteTitle: 'Society of St. Vincent de Paul - Rogers, AR',
+    siteSubtitle: 'Community Resources',
     skipToContent: 'Skip to main content',
     searchLabel: 'Search community resources',
     searchPlaceholder: 'Search by organization, category, or ZIP code (e.g. 72756, Food)...',
-    searchHint: 'Search matches organization names, categories, or ZIP codes.',
     clearSearch: 'Clear search',
     resultsCount: (shown, total) =>
       `Showing ${shown} of ${total} ${total === 1 ? 'resource' : 'resources'}`,
@@ -52,18 +53,17 @@ export const TRANSLATIONS: Record<Language, Translations> = {
     feedbackButton: 'Send Feedback',
     feedbackSubject: 'SVdP Rogers Resource Page Feedback',
     languageToggleLabel: 'Español',
-    disclaimerAvailability:
-      'We do not guarantee that any resources listed will be available or will meet your specific needs. Please use your own judgment when contacting and working with these organizations.',
     disclaimerAccuracy:
       'We strive to maintain accurate information, but cannot guarantee it is always up to date. Please call ahead when possible.',
+    footerAttribution: (lastUpdate) =>
+      `Provided by the SVDP Mother Theresa Conference of Rogers, AR - ${lastUpdate}`,
   },
   es: {
-    siteTitle: 'Sociedad de San Vicente de Paúl',
-    siteSubtitle: 'Conferencia Madre Teresa – Recursos Comunitarios de Rogers, AR',
+    siteTitle: 'Sociedad de San Vicente de Paúl - Rogers, AR',
+    siteSubtitle: 'Recursos',
     skipToContent: 'Saltar al contenido principal',
     searchLabel: 'Buscar recursos comunitarios',
     searchPlaceholder: 'Buscar por organización, categoría o código postal (ej. 72756, Alimentos)...',
-    searchHint: 'La búsqueda incluye nombres de organizaciones, categorías o códigos postales.',
     clearSearch: 'Borrar búsqueda',
     resultsCount: (shown, total) =>
       `Mostrando ${shown} de ${total} ${total === 1 ? 'recurso' : 'recursos'}`,
@@ -83,10 +83,10 @@ export const TRANSLATIONS: Record<Language, Translations> = {
     feedbackButton: 'Enviar Comentarios',
     feedbackSubject: 'Comentarios sobre la página de recursos de SVdP Rogers',
     languageToggleLabel: 'English',
-    disclaimerAvailability:
-      'No garantizamos que los recursos enumerados estén disponibles o satisfagan sus necesidades específicas. Por favor use su propio criterio al contactar y trabajar con estas organizaciones.',
     disclaimerAccuracy:
       'Nos esforzamos por mantener la información actualizada, pero no podemos garantizar su exactitud en todo momento. Por favor llame con anticipación cuando sea posible.',
+    footerAttribution: (lastUpdate) =>
+      `Proporcionado por la Conferencia Madre Teresa de SVDP de Rogers, AR - ${lastUpdate}`,
   },
 }
 

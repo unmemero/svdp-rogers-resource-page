@@ -9,7 +9,6 @@ interface SearchBarProps {
 
 export function SearchBar({ query, onChange, t }: SearchBarProps) {
   const inputId = useId()
-  const hintId = useId()
 
   return (
     <search className="w-full">
@@ -25,9 +24,6 @@ export function SearchBar({ query, onChange, t }: SearchBarProps) {
           >
             {t.searchLabel}
           </label>
-          <span id={hintId} className="text-sm text-slate-600">
-            {t.searchHint}
-          </span>
         </div>
 
         <div className="relative mt-2 flex items-center">
@@ -52,7 +48,6 @@ export function SearchBar({ query, onChange, t }: SearchBarProps) {
             value={query}
             onChange={(e) => onChange(e.target.value)}
             placeholder={t.searchPlaceholder}
-            aria-describedby={hintId}
             autoCorrect="off"
             autoCapitalize="none"
             spellCheck={false}
