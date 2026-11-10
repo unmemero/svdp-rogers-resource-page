@@ -1,0 +1,195 @@
+[
+  {
+    "name": "Rogers Community Food Pantry (Demo)",
+    "categories": ["Food Pantries", "Clothing & Household"],
+    "phone": "(479) 555-0101",
+    "address": "214 S 2nd St, Rogers, AR 72756",
+    "website": "https://example.org/rogers-food-pantry",
+    "email": "help@rogersfoodpantry.example.org"
+  },
+  {
+    "name": "Safe Haven Family Shelter (Demo)",
+    "categories": ["Emergency Shelters", "Utility & Rent Assistance"],
+    "phone": "(479) 555-0102",
+    "address": "1105 W Walnut St, Rogers, AR 72756",
+    "website": "https://example.org/safe-haven-nwa",
+    "email": "intake@safehavennwa.example.org"
+  },
+  {
+    "name": "NWA Community Free Clinic (Demo)",
+    "categories": ["Medical Clinics", "Mental Health"],
+    "phone": "(479) 555-0103",
+    "address": "801 SE Plaza Ave, Bentonville, AR 72712",
+    "website": "https://example.org/nwa-free-clinic",
+    "email": "appointments@nwafreeclinic.example.org"
+  },
+  {
+    "name": "Ozark Regional Transit Assistance (Demo)",
+    "categories": ["Transportation"],
+    "phone": "(479) 555-0104",
+    "address": "2423 E Robinson Ave, Springdale, AR 72764",
+    "website": "https://example.org/ozark-transit",
+    "email": "rides@ozarktransit.example.org"
+  },
+  {
+    "name": "Benton County Department of Human Services (Demo)",
+    "categories": ["Government Assistance", "Food Pantries", "Medical Clinics"],
+    "phone": "(479) 555-0105",
+    "address": "900 SE Ranch Rd, Bentonville, AR 72712",
+    "website": "https://example.org/benton-dhs",
+    "email": ""
+  },
+  {
+    "name": "Grace Samaritans Care Center (Demo)",
+    "categories": ["Food Pantries", "Clothing & Household"],
+    "phone": "(479) 555-0106",
+    "address": "1780 N Dixieland Rd, Rogers, AR 72756",
+    "website": "https://example.org/grace-samaritans",
+    "email": "info@gracesamaritans.example.org"
+  },
+  {
+    "name": "Hope Bridge Counseling & Wellness (Demo)",
+    "categories": ["Mental Health"],
+    "phone": "(479) 555-0107",
+    "address": "3300 S Pinnacle Hills Pkwy, Rogers, AR 72758",
+    "website": "https://example.org/hopebridge-counseling",
+    "email": "care@hopebridge.example.org"
+  },
+  {
+    "name": "St. Vincent de Paul Mother Teresa Conference Helpline (Demo)",
+    "categories": ["Utility & Rent Assistance", "Food Pantries", "Clothing & Household"],
+    "phone": "(479) 555-0108",
+    "address": "1416 W Poplar St, Rogers, AR 72758",
+    "website": "https://example.org/svdp-rogers",
+    "email": "conference@svdp-rogers.example.org"
+  },
+  {
+    "name": "New Beginnings Night Shelter (Demo)",
+    "categories": ["Emergency Shelters"],
+    "phone": "(479) 555-0109",
+    "address": "502 N Thompson St, Springdale, AR 72764",
+    "website": "",
+    "email": "shelter@newbeginningsnwa.example.org"
+  },
+  {
+    "name": "Lowell Bread of Life Distribution (Demo)",
+    "categories": ["Food Pantries"],
+    "phone": "(479) 555-0110",
+    "address": "408 W Monroe Ave, Lowell, AR 72745",
+    "website": "https://example.org/lowell-bread-of-life",
+    "email": ""
+  },
+  {
+    "name": "Northwest Arkansas Housing Authority (Demo)",
+    "categories": ["Government Assistance", "Utility & Rent Assistance"],
+    "phone": "(479) 555-0111",
+    "address": "612 E Emma Ave, Springdale, AR 72764",
+    "website": "https://example.org/nwa-housing",
+    "email": "housing@nwahousing.example.org"
+  },
+  {
+    "name": "Mercy Mobile Health Van – Rogers Stop (Demo)",
+    "categories": ["Medical Clinics"],
+    "phone": "(479) 555-0112",
+    "address": "1200 W Hudson Rd, Rogers, AR 72756",
+    "website": "https://example.org/mobile-health",
+    "email": "mobilevan@healthnwa.example.org"
+  },
+  {
+    "name": "Crisis Stabilization & Behavioral Support Line (Demo)",
+    "categories": ["Mental Health", "Emergency Shelters"],
+    "phone": "(479) 555-0113",
+    "address": "",
+    "website": "https://example.org/nwa-crisis-support",
+    "email": "support@nwacrisis.example.org"
+  },
+  {
+    "name": "Senior & Disabled Neighbor Ride Share (Demo)",
+    "categories": ["Transportation"],
+    "phone": "(479) 555-0114",
+    "address": "410 N Main St, Bentonville, AR 72712",
+    "website": "https://example.org/neighbor-rides",
+    "email": "dispatch@neighborrides.example.org"
+  },
+  {
+    "name": "Harvest Table Community Kitchen (Demo)",
+    "categories": ["Food Pantries"],
+    "phone": "(479) 555-0115",
+    "address": "305 E Chestnut St, Rogers, AR 72756",
+    "website": "",
+    "email": "kitchen@harvesttable.example.org"
+  },
+  {
+    "name": "Warm Hearts Coat & Thrift Closet (Demo)",
+    "categories": ["Clothing & Household"],
+    "phone": "(479) 555-0116",
+    "address": "2201 W Pleasant Grove Rd, Rogers, AR 72758",
+    "website": "https://example.org/warm-hearts-closet",
+    "email": "donations@warmhearts.example.org"
+  },
+  {
+    "name": "Arkansas Energy & Water Relief Program (Demo)",
+    "categories": ["Government Assistance", "Utility & Rent Assistance"],
+    "phone": "(479) 555-0117",
+    "address": "704 S Walton Blvd, Bentonville, AR 72712",
+    "website": "https://example.org/ar-utility-relief",
+    "email": "liheap@arutilityrelief.example.org"
+  },
+  {
+    "name": "Compassion Dental & Vision Clinic (Demo)",
+    "categories": ["Medical Clinics"],
+    "phone": "(479) 555-0118",
+    "address": "1505 S 8th St, Rogers, AR 72756",
+    "website": "https://example.org/compassion-dental",
+    "email": "clinic@compassiondental.example.org"
+  },
+  {
+    "name": "Pathways Youth & Family Shelter (Demo)",
+    "categories": ["Emergency Shelters", "Mental Health"],
+    "phone": "(479) 555-0119",
+    "address": "915 N College Ave, Fayetteville, AR 72701",
+    "website": "https://example.org/pathways-shelter",
+    "email": "youth@pathwaysshelter.example.org"
+  },
+  {
+    "name": "Beaver Lake Area Pantry & Outreach (Demo)",
+    "categories": ["Food Pantries", "Utility & Rent Assistance"],
+    "phone": "(479) 555-0120",
+    "address": "14420 E Hwy 12, Rogers, AR 72756",
+    "website": "",
+    "email": "outreach@beaverlakepantry.example.org"
+  },
+  {
+    "name": "NWA Veterans Resource & Transit Hub (Demo)",
+    "categories": ["Government Assistance", "Transportation", "Mental Health"],
+    "phone": "(479) 555-0121",
+    "address": "2010 S Bellview Rd, Rogers, AR 72758",
+    "website": "https://example.org/nwa-vets-hub",
+    "email": "vets@nwavetshub.example.org"
+  },
+  {
+    "name": "Little Flock Neighbor Cupboard (Demo)",
+    "categories": ["Food Pantries", "Clothing & Household"],
+    "phone": "(479) 555-0122",
+    "address": "1550 Little Flock Dr, Rogers, AR 72756",
+    "website": "https://example.org/little-flock-cupboard",
+    "email": ""
+  },
+  {
+    "name": "Serenity Family Counseling Center (Demo)",
+    "categories": ["Mental Health"],
+    "phone": "(479) 555-0123",
+    "address": "510 W Central Ave, Bentonville, AR 72712",
+    "website": "https://example.org/serenity-family",
+    "email": "hello@serenityfamily.example.org"
+  },
+  {
+    "name": "Workforce Commuter Voucher Program (Demo)",
+    "categories": ["Transportation", "Government Assistance"],
+    "phone": "(479) 555-0124",
+    "address": "100 N Broadway St, Siloam Springs, AR 72761",
+    "website": "https://example.org/commuter-vouchers",
+    "email": "vouchers@nwacommute.example.org"
+  }
+]
+

@@ -10,7 +10,7 @@ This page will serve to provide neighbors with a simple interface for neighbors 
 - Classify these organizations by category in order for simpler search
 - Provide a way for users to search by keyword, that being org name, zip code (if available), or category within a single top search bar
 - Have a full spanish translation
-- Have an accessible way for members to update the resource list by placing each category in its own file, and each language in its own directory
+- Have an accessible way for members to update the resource list by placing each language in its own JSON file
 - Provide uptime as per what GitHUb pages permits
 - Maintain minimum viable support for desktop and tablet devices
 - Provide a feedback button with the email of the conference (maybe mine, since I'll maintain it)
@@ -35,7 +35,7 @@ This app will be created using React with Vite and Typescript, and TailwindCSS f
 ## Design considerations
 - The app will be mobile first
 - The app must contain a single search bar where the application will search within the data in the categories, zip code, or org name fields of the resources data
-- The data will be split into 2 directories: english and spanish, with a json file per category. Each JSON file will be an array of objects.
+- The data will be split into 2 JSON files (`english.json` and `spanish.json`). Each JSON file will be an array of objects.
 - The items will be loaded into a paginated view with 10, 20, 50 items per page.
 - No filter buttons, no sort buttons, only a search bar, pagination, feedback button (just a button that opens ther email to send me an email, if we can put a subject when clicking that button it would be neat), and language toggle.
 - The items will be displayed in a card format with the following fields:
@@ -70,20 +70,8 @@ svdp_rogers_resource_page/
 │   │
 │   ├── data/
 │   │   ├── categories.ts
-│   │   ├── english/  # English JSON data files
-│   │   │   ├── emergency-shelters.json
-│   │   │   ├── food-pantries.json
-│   │   │   ├── government-assistance.json
-│   │   │   ├── mental-health.json
-│   │   │   ├── medical-clinics.json
-│   │   │   └── transportation.json
-│   │   └── spanish/  # Spanish JSON data files
-│   │       ├── refugios-emergencia.json
-│   │       ├── despensas-alimentos.json
-│   │       ├── asistencia-gobierno.json
-│   │       ├── salud-mental.json
-│   │       ├── clinicas-medicas.json
-│   │       └── transporte.json
+│   │   ├── english.json  # English JSON data file
+│   │   └── spanish.json  # Spanish JSON data file
 │   │
 │   ├── hooks/
 │   │   └── useSearch.ts
