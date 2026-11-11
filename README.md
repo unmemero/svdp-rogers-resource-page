@@ -118,6 +118,15 @@ Then, to test the application locally, run
 npm run dev
 ```
 
+### Local Admin Update Dashboard (Not Deployed)
+Page admins can launch the local-only resource editor to add, edit, or delete organization cards in `src/data/english.json` and `src/data/spanish.json`:
+```bash
+npm run admin
+```
+- Clicking **Save** on a card updates the active language's JSON file directly on disk.
+- **Important**: Whenever you add, edit, or delete an entry in `English (english.json)`, you **must** also switch to `Español (spanish.json)` in the dashboard and update the corresponding Spanish entry before committing.
+- Clicking **Commit Instructions** opens a modal with the exact Git commands to commit and push your changes. This dashboard is completely excluded from production builds.
+
 ## Deploying
 
 ### Automatic Deployment (GitHub Actions)
