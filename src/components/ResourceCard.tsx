@@ -95,8 +95,16 @@ export function ResourceCard({ resource, t }: ResourceCardProps) {
             </dd>
           </div>
         )}
+
+        {resource.notes && (
+          <div className="flex items-start gap-2.5">
+            <dt className="font-semibold text-slate-700 shrink-0">
+              {t.notesLabel}:
+            </dt>
+            <dd className="min-w-0 text-slate-800">{resource.notes}</dd>
+          </div>
+        )}
       </dl>
     </article>
   )
 }
-

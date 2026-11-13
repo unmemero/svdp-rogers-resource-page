@@ -76,20 +76,23 @@ function formatPhoneNumber(value: string): string {
   digits = digits.slice(0, 10)
 
   if (digits.length === 0) return ''
-  if (digits.length <= 3) return `(${digits}`
+  if (digits.length <= 3) return digits
   if (digits.length <= 6) return `(${digits.slice(0, 3)}) ${digits.slice(3)}`
   return `(${digits.slice(0, 3)}) ${digits.slice(3, 6)}-${digits.slice(6)}`
 }
 
 function stripIds(items: EditableResource[]): Resource[] {
-  return items.map(({ name, categories, phone, address, website, email }) => ({
-    name: name.trim(),
-    categories: categories.map((c) => c.trim()).filter(Boolean),
-    phone: phone.trim(),
-    address: address.trim(),
-    website: website.trim(),
-    email: email.trim(),
-  }))
+  return items.map(
+    ({ name, categories, phone, address, website, email, notes }) => ({
+      name: name.trim(),
+      categories: categories.map((c) => c.trim()).filter(Boolean),
+      phone: phone.trim(),
+      address: address.trim(),
+      website: website.trim(),
+      email: email.trim(),
+      notes: (notes || '').trim(),
+    }),
+  )
 }
 
 export function AdminDashboard() {
@@ -107,6 +110,7 @@ export function AdminDashboard() {
     address: '',
     website: '',
     email: '',
+    notes: '',
   })
   const [addressParts, setAddressParts] = useState<AddressParts>({
     street: '',
@@ -116,6 +120,7 @@ export function AdminDashboard() {
   })
   const [customCategoriesInput, setCustomCategoriesInput] = useState('')
   const [categoryError, setCategoryError] = useState<string | null>(null)
+  const [contactError, setContactError] = useState<string | null>(null)
   const [statusMessage, setStatusMessage] = useState<{
     type: 'success' | 'error'
     text: string
@@ -238,10 +243,12 @@ export function AdminDashboard() {
       address: item.address,
       website: item.website,
       email: item.email,
+      notes: item.notes || '',
     })
     setAddressParts(parseAddress(item.address))
     setCustomCategoriesInput(extraCategories.join(', '))
     setCategoryError(null)
+    setContactError(null)
   }
 
   const handleAddNew = () => {
@@ -253,6 +260,7 @@ export function AdminDashboard() {
       address: '',
       website: '',
       email: '',
+      notes: '',
     }
     setQuery('')
     setResources((prev) => [newItem, ...prev])
@@ -266,6 +274,7 @@ export function AdminDashboard() {
     setEditingId(null)
     setIsNewEntry(false)
     setCategoryError(null)
+    setContactError(null)
   }
 
   const handleToggleCategory = (category: string) => {
@@ -293,6 +302,23 @@ export function AdminDashboard() {
       new Set([...draft.categories, ...extraCategories]),
     )
 
+    const combinedAddress = combineAddress(addressParts)
+    const hasContactOrNotes = Boolean(
+      draft.phone.trim() ||
+        draft.website.trim() ||
+        combinedAddress ||
+        (draft.notes || '').trim(),
+    )
+
+    if (!hasContactOrNotes) {
+      setContactError(
+        'At least one form of contact or information must exist: Phone, Website, Address, or Notes.',
+      )
+      const phoneInput = document.getElementById(`${formIdPrefix}-phone`)
+      phoneInput?.focus()
+      return
+    }
+
     if (mergedCategories.length === 0) {
       setCategoryError(
         'Please select at least one category or type a custom category.',
@@ -307,7 +333,8 @@ export function AdminDashboard() {
     const updatedItem: EditableResource = {
       ...draft,
       _id: editingId,
-      address: combineAddress(addressParts),
+      address: combinedAddress,
+      notes: (draft.notes || '').trim(),
       categories: mergedCategories,
     }
 
@@ -474,6 +501,20 @@ export function AdminDashboard() {
                           : `Editing: ${item.name}`}
                       </h2>
 
+                      <p className="text-xs font-semibold text-slate-600">
+                        * At least one form of contact or information is required: Phone, Website, Address, or Notes.
+                      </p>
+
+                      {contactError && (
+                        <p
+                          id={`${formIdPrefix}-contact-error`}
+                          role="alert"
+                          className="rounded-lg border-2 border-red-600 bg-red-50 px-3.5 py-2.5 text-sm font-bold text-red-700"
+                        >
+                          {contactError}
+                        </p>
+                      )}
+
                       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
                         <div className="flex flex-col gap-1 sm:col-span-2">
                           <label
@@ -500,7 +541,7 @@ export function AdminDashboard() {
                             htmlFor={`${formIdPrefix}-phone`}
                             className="text-sm font-bold text-slate-900"
                           >
-                            Phone Number *
+                            Phone Number
                           </label>
                           <input
                             id={`${formIdPrefix}-phone`}
@@ -508,17 +549,16 @@ export function AdminDashboard() {
                             type="tel"
                             inputMode="tel"
                             autoComplete="tel"
-                            required
-                            pattern="\(\d{3}\) \d{3}-\d{4}"
-                            title="10-digit phone number in format (479) 555-0100"
                             value={draft.phone}
-                            onChange={(e) =>
+                            onChange={(e) => {
+                              const formatted = formatPhoneNumber(e.target.value)
                               setDraft({
                                 ...draft,
-                                phone: formatPhoneNumber(e.target.value),
+                                phone: formatted,
                               })
-                            }
-                            placeholder="(479) 555-0100"
+                              if (formatted.trim()) setContactError(null)
+                            }}
+                            placeholder="(479) 555-0100 or 988"
                             className="rounded-lg border-2 border-slate-500 px-3 py-2 text-slate-900 focus-visible:outline-3 focus-visible:outline-offset-2 focus-visible:outline-sky-700"
                           />
                         </div>
@@ -535,9 +575,10 @@ export function AdminDashboard() {
                             name="website"
                             type="url"
                             value={draft.website}
-                            onChange={(e) =>
+                            onChange={(e) => {
                               setDraft({ ...draft, website: e.target.value })
-                            }
+                              if (e.target.value.trim()) setContactError(null)
+                            }}
                             placeholder="https://example.org"
                             autoCorrect="off"
                             autoCapitalize="none"
@@ -568,6 +609,27 @@ export function AdminDashboard() {
                             className="rounded-lg border-2 border-slate-500 px-3 py-2 text-slate-900 focus-visible:outline-3 focus-visible:outline-offset-2 focus-visible:outline-sky-700"
                           />
                         </div>
+
+                        <div className="flex flex-col gap-1 sm:col-span-2">
+                          <label
+                            htmlFor={`${formIdPrefix}-notes`}
+                            className="text-sm font-bold text-slate-900"
+                          >
+                            Notes (hours, instructions, eligibility, etc.)
+                          </label>
+                          <input
+                            id={`${formIdPrefix}-notes`}
+                            name="notes"
+                            type="text"
+                            value={draft.notes || ''}
+                            onChange={(e) => {
+                              setDraft({ ...draft, notes: e.target.value })
+                              if (e.target.value.trim()) setContactError(null)
+                            }}
+                            placeholder="e.g. Contact your school counselor; Thursday 5:30–6:30"
+                            className="rounded-lg border-2 border-slate-500 px-3 py-2 text-slate-900 focus-visible:outline-3 focus-visible:outline-offset-2 focus-visible:outline-sky-700"
+                          />
+                        </div>
                       </div>
 
                       <fieldset className="rounded-lg border border-slate-300 p-3.5">
@@ -588,12 +650,13 @@ export function AdminDashboard() {
                               type="text"
                               autoComplete="street-address"
                               value={addressParts.street}
-                              onChange={(e) =>
+                              onChange={(e) => {
                                 setAddressParts({
                                   ...addressParts,
                                   street: e.target.value,
                                 })
-                              }
+                                if (e.target.value.trim()) setContactError(null)
+                              }}
                               placeholder="214 S 2nd St"
                               className="rounded-lg border-2 border-slate-500 px-3 py-2 text-slate-900 focus-visible:outline-3 focus-visible:outline-offset-2 focus-visible:outline-sky-700"
                             />
@@ -612,12 +675,13 @@ export function AdminDashboard() {
                               type="text"
                               autoComplete="address-level2"
                               value={addressParts.city}
-                              onChange={(e) =>
+                              onChange={(e) => {
                                 setAddressParts({
                                   ...addressParts,
                                   city: e.target.value,
                                 })
-                              }
+                                if (e.target.value.trim()) setContactError(null)
+                              }}
                               placeholder="Rogers"
                               className="rounded-lg border-2 border-slate-500 px-3 py-2 text-slate-900 focus-visible:outline-3 focus-visible:outline-offset-2 focus-visible:outline-sky-700"
                             />
@@ -665,12 +729,17 @@ export function AdminDashboard() {
                               autoComplete="postal-code"
                               maxLength={10}
                               value={addressParts.zip}
-                              onChange={(e) =>
+                              onChange={(e) => {
+                                const cleanedZip = e.target.value.replace(
+                                  /[^\d-]/g,
+                                  '',
+                                )
                                 setAddressParts({
                                   ...addressParts,
-                                  zip: e.target.value.replace(/[^\d-]/g, ''),
+                                  zip: cleanedZip,
                                 })
-                              }
+                                if (cleanedZip.trim()) setContactError(null)
+                              }}
                               placeholder="72756"
                               className="rounded-lg border-2 border-slate-500 px-3 py-2 text-slate-900 focus-visible:outline-3 focus-visible:outline-offset-2 focus-visible:outline-sky-700"
                             />
@@ -829,6 +898,12 @@ export function AdminDashboard() {
                         Email:{' '}
                       </dt>
                       <dd className="inline">{item.email || '—'}</dd>
+                    </div>
+                    <div>
+                      <dt className="inline font-semibold text-slate-900">
+                        Notes:{' '}
+                      </dt>
+                      <dd className="inline">{item.notes || '—'}</dd>
                     </div>
                   </dl>
 

@@ -7,6 +7,14 @@ export interface Resource {
   address: string
   website: string
   email: string
+  notes?: string
+}
+
+export interface SearchNotice {
+  id: string
+  keywords: string[]
+  title: string
+  message: string
 }
 
 export type PageSize = 10 | 20 | 50
@@ -25,6 +33,7 @@ export interface Translations {
   addressLabel: string
   websiteLabel: string
   emailLabel: string
+  notesLabel: string
   visitWebsite: string
   sendEmail: string
   itemsPerPage: string
@@ -37,4 +46,3 @@ export interface Translations {
   disclaimerAccuracy: string
   footerAttribution: (lastUpdate: string) => string
 }
-

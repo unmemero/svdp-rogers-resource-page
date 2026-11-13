@@ -3,10 +3,10 @@ import { Layout } from './components/Layout'
 import { Pagination } from './components/Pagination'
 import { ResourceCard } from './components/ResourceCard'
 import { SearchBar } from './components/SearchBar'
-import { TRANSLATIONS } from './data/categories'
+import { SEARCH_NOTICES, TRANSLATIONS } from './data/categories'
 import englishData from './data/english.json'
 import spanishData from './data/spanish.json'
-import { useSearch } from './hooks/useSearch'
+import { useSearch, useSearchNotices } from './hooks/useSearch'
 import type { Language, PageSize, Resource } from './types'
 
 const RESOURCES_BY_LANG: Record<Language, Resource[]> = {
@@ -23,6 +23,7 @@ export function App() {
   const t = TRANSLATIONS[language]
   const allResources = RESOURCES_BY_LANG[language]
   const filteredResources = useSearch(allResources, query)
+  const activeNotices = useSearchNotices(SEARCH_NOTICES[language], query)
 
   const totalPages = Math.max(1, Math.ceil(filteredResources.length / pageSize))
   const safePage = Math.min(currentPage, totalPages)
@@ -64,6 +65,20 @@ export function App() {
           onChange={handleQueryChange}
           t={t}
         />
+
+        {activeNotices.length > 0 && (
+          <div className="flex flex-col gap-3" role="region" aria-label="Special notices">
+            {activeNotices.map((notice) => (
+              <div
+                key={notice.id}
+                className="rounded-xl border-2 border-amber-500 bg-amber-50 p-4 text-amber-950 shadow-sm"
+              >
+                <p className="text-sm font-bold sm:text-base">{notice.title}</p>
+                <p className="mt-1 text-sm leading-relaxed">{notice.message}</p>
+              </div>
+            ))}
+          </div>
+        )}
 
         <div className="flex items-center justify-between px-1">
           <p

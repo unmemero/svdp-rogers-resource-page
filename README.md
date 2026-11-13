@@ -38,13 +38,14 @@ This app will be created using React with Vite and Typescript, and TailwindCSS f
 - The data will be split into 2 JSON files (`english.json` and `spanish.json`). Each JSON file will be an array of objects.
 - The items will be loaded into a paginated view with 10, 20, 50 items per page.
 - No filter buttons, no sort buttons, only a search bar, pagination, feedback button (just a button that opens ther email to send me an email, if we can put a subject when clicking that button it would be neat), and language toggle.
-- The items will be displayed in a card format with the following fields:
+- The items will be displayed in a card format with the following fields (at least one of Phone, Website, Address, or Notes must exist):
     - Org name
     - Categories
-    - Phone number (link style)
+    - Phone number (if available, link style)
     - Address (if available)
     - Website (if available, use link style)
     - Email (if available, use link style)
+    - Notes (if available)
 
 ### Directory structure
 ```
@@ -97,10 +98,11 @@ svdp_rogers_resource_page/
     {
         "name": "Organization Name",
         "categories": ["Category 1", "Category 2"],
-        "phone": "Phone Number",
+        "phone": "Phone Number", # can be empty if address, website, or notes is provided
         "address": "Address", # can be empty
-        "website": "Website" # can be empty
-        "email": "Email" # can be empty
+        "website": "Website", # can be empty
+        "email": "Email", # can be empty
+        "notes": "Notes" # can be empty
     },
     {
         # New entry

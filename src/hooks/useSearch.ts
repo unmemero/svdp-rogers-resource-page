@@ -1,5 +1,5 @@
 import { useMemo } from 'react'
-import type { Resource } from '../types'
+import type { Resource, SearchNotice } from '../types'
 
 function normalizeText(value: string): string {
   return value
@@ -22,10 +22,34 @@ export function useSearch(resources: Resource[], query: string): Resource[] {
       const nameNorm = normalizeText(resource.name)
       const categoriesNorm = resource.categories.map(normalizeText).join(' ')
       const addressNorm = normalizeText(resource.address || '')
-      const searchableText = `${nameNorm} ${categoriesNorm} ${addressNorm}`
+      const notesNorm = normalizeText(resource.notes || '')
+      const searchableText = `${nameNorm} ${categoriesNorm} ${addressNorm} ${notesNorm}`
 
       return terms.every((term) => searchableText.includes(term))
     })
   }, [resources, query])
 }
 
+export function useSearchNotices(
+  notices: SearchNotice[],
+  query: string,
+): SearchNotice[] {
+  return useMemo(() => {
+    const normalizedQuery = normalizeText(query)
+    if (!normalizedQuery || normalizedQuery.length < 3) {
+      return []
+    }
+
+    const queryWords = normalizedQuery.split(/\s+/).filter(Boolean)
+
+    return notices.filter((notice) =>
+      notice.keywords.some((kw) => {
+        const normKw = normalizeText(kw)
+        return (
+          normalizedQuery.includes(normKw) ||
+          queryWords.some((word) => word.length >= 4 && normKw.startsWith(word))
+        )
+      }),
+    )
+  }, [notices, query])
+}

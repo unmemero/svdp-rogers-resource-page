@@ -1,4 +1,4 @@
-import type { Language, Translations } from '../types'
+import type { Language, SearchNotice, Translations } from '../types'
 
 export const FEEDBACK_EMAIL = 'feedback@svdp-rogers.org'
 export const LAST_UPDATED = 'November 2026'
@@ -6,26 +6,68 @@ export const LAST_UPDATED_ES = 'Noviembre 2026'
 
 export const CATEGORIES = {
   en: [
+    'Food Pantries & Meals',
+    'Financial Assistance',
     'Emergency Shelters',
-    'Food Pantries',
-    'Government Assistance',
+    'Transitional Living',
+    'Housing Assistance',
+    'Clothing and household items',
+    'Medical & Dental',
+    'Laundry Assistance',
     'Mental Health',
-    'Medical Clinics',
-    'Transportation',
-    'Utility & Rent Assistance',
-    'Clothing & Household',
+    'Important Contacts',
   ],
   es: [
+    'Despensas de Alimentos y Comidas',
+    'Asistencia Financiera',
     'Refugios de Emergencia',
-    'Despensas de Alimentos',
-    'Asistencia del Gobierno',
+    'Vivienda de Transición',
+    'Asistencia de Vivienda',
+    'Ropa y artículos del hogar',
+    'Asistencia Médica y Dental',
+    'Asistencia de Lavandería',
     'Salud Mental',
-    'Clínicas Médicas',
-    'Transporte',
-    'Asistencia de Renta y Servicios',
-    'Ropa y Hogar',
+    'Contactos Importantes',
   ],
 } as const
+
+export const SEARCH_NOTICES: Record<Language, SearchNotice[]> = {
+  en: [
+    {
+      id: 'mental-health-school-notice',
+      keywords: [
+        'mental health',
+        'mental',
+        'counseling',
+        'counselor',
+        'behavioral',
+        'therapy',
+        'school',
+      ],
+      title: 'Note on Mental Health Services',
+      message:
+        "School-based mental health services are offered in all of our schools. Please see your child's school counselor for options and a referral. The below list of mental health agencies is only a partial list. This list is not an endorsement of services.",
+    },
+  ],
+  es: [
+    {
+      id: 'mental-health-school-notice',
+      keywords: [
+        'salud mental',
+        'mental',
+        'consejeria',
+        'consejero',
+        'conductual',
+        'terapia',
+        'escuela',
+        'escolar',
+      ],
+      title: 'Nota sobre Servicios de Salud Mental',
+      message:
+        'Se ofrecen servicios de salud mental en todas nuestras escuelas. Por favor consulte al consejero escolar de su hijo(a) para conocer las opciones y obtener una referencia. La siguiente lista de agencias de salud mental es solo una lista parcial. Esta lista no constituye un respaldo de los servicios.',
+    },
+  ],
+}
 
 export const TRANSLATIONS: Record<Language, Translations> = {
   en: {
@@ -44,6 +86,7 @@ export const TRANSLATIONS: Record<Language, Translations> = {
     addressLabel: 'Address',
     websiteLabel: 'Website',
     emailLabel: 'Email',
+    notesLabel: 'Notes',
     visitWebsite: 'Visit Website',
     sendEmail: 'Send Email',
     itemsPerPage: 'Items per page:',
@@ -74,6 +117,7 @@ export const TRANSLATIONS: Record<Language, Translations> = {
     addressLabel: 'Dirección',
     websiteLabel: 'Sitio web',
     emailLabel: 'Correo electrónico',
+    notesLabel: 'Notas',
     visitWebsite: 'Visitar sitio web',
     sendEmail: 'Enviar correo',
     itemsPerPage: 'Elementos por página:',
@@ -89,4 +133,3 @@ export const TRANSLATIONS: Record<Language, Translations> = {
       `Proporcionado por la Conferencia Madre Teresa de SVDP de Rogers, AR - ${lastUpdate}`,
   },
 }
-
