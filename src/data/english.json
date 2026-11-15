@@ -441,29 +441,38 @@
     "notes": ""
   },
   {
-    "name": "Peace at Home (Housing Assistance)",
-    "categories": ["Housing Assistance"],
-    "phone": "(877) 442-9811",
+    "name": "Peace at Home Family Shelter",
+    "categories": ["Housing Assistance", "Emergency Shelters"],
+    "phone": "1 (877) 442-9811",
     "address": "",
-    "website": "",
-    "email": "",
+    "website": "https://peaceathomeshelter.org/programs-services/",
+    "email": "help@peaceathomeshelter.com",
+    "notes": ""
+  },
+  {
+    "name": "Peace at Home Thrift Store",
+    "categories": ["Clothing and household items"],
+    "phone": "(479) 973-9571",
+    "address": "1200 Garland Ave #4, Fayetteville, AR 72703",
+    "website": "https://peaceathomeshelter.org/programs-services/",
+    "email": "help@peaceathomeshelter.com",
     "notes": ""
   },
   {
     "name": "Siloam Springs Housing Authority",
     "categories": ["Housing Assistance"],
     "phone": "(479) 524-8117",
-    "address": "",
-    "website": "",
-    "email": "",
+    "address": "1255 W Tulsa St, Siloam Springs, AR 72761",
+    "website": "https://www.siloamspringshousing.org/o/ssha/page/home/",
+    "email": "(479) 524-8117",
     "notes": "Section 8 Housing"
   },
   {
     "name": "ARcare Bentonville Medical",
-    "categories": ["Medical & Dental", "Mental Health"],
+    "categories": ["Medical & Dental"],
     "phone": "(479) 271-7634",
-    "address": "",
-    "website": "",
+    "address": "2805 SE Midcities Dr, Bentonville, AR 72712",
+    "website": "https://www.arcare.net/locations/bentonville-medical/",
     "email": "",
     "notes": ""
   },
@@ -471,35 +480,26 @@
     "name": "ARcare Pea Ridge Medical",
     "categories": ["Medical & Dental"],
     "phone": "(479) 451-0579",
-    "address": "",
-    "website": "",
+    "address": "145 N Curtis Ave, Pea Ridge, AR 72751",
+    "website": "https://www.arcare.net/locations/pea-ridge-medical/",
     "email": "",
     "notes": ""
   },
   {
-    "name": "Benton County Health Department—Rogers",
+    "name": "Benton County Health Department — Rogers",
     "categories": ["Medical & Dental"],
     "phone": "(479) 986-1300",
-    "address": "",
-    "website": "",
+    "address": " 1200 W Walnut St, Suite 2200, Rogers, AR 72756",
+    "website": "https://healthy.arkansas.gov/breastcare-provider/benton-county-lhu-rogers-rogers/",
     "email": "",
     "notes": ""
   },
   {
-    "name": "Community Clinic NWA (Medical)—Rogers",
+    "name": "Community Clinic NWA — Rogers",
     "categories": ["Medical & Dental"],
     "phone": "(855) 438-2280",
-    "address": "",
-    "website": "",
-    "email": "",
-    "notes": ""
-  },
-  {
-    "name": "Community Clinic NWA (Dental)—Rogers",
-    "categories": ["Medical & Dental"],
-    "phone": "(855) 438-2280",
-    "address": "",
-    "website": "",
+    "address": "1233 W. Poplar St, Rogers, AR 72756",
+    "website": "https://communityclinic.net/location/primary-specialty-care-rogers-ar-poplar-st/",
     "email": "",
     "notes": ""
   },
@@ -508,49 +508,103 @@
     "categories": ["Medical & Dental"],
     "phone": "(870) 423-3351",
     "address": "",
-    "website": "",
+    "website": "https://humanservices.arkansas.gov/divisions-shared-services/medical-services/healthcare-programs/tefra/",
     "email": "",
     "notes": "Ask for the TEFRA Unit"
   },
   {
-    "name": "Loving Choices Pregnancy Center",
+    "name": "Loving Choices Pregnancy Center - Rogers",
     "categories": ["Medical & Dental"],
     "phone": "(479) 631-5951",
-    "address": "",
-    "website": "",
-    "email": "",
+    "address": "3610 W Southern Hills Blvd, Suite B, Rogers, AR 72758",
+    "website": "https://lovingchoices.org/",
+    "email": "info@lovingchoices.org",
+    "notes": ""
+  },
+  {
+    "name": "Loving Choices Pregnancy Center - Fayetteville",
+    "categories": ["Medical & Dental"],
+    "phone": "(479) 521-6655",
+    "address": "275 South Duncan, Suite B, Fayetteville, AR 72701",
+    "website": "https://lovingchoices.org/",
+    "email": "info@lovingchoices.org",
+    "notes": ""
+  },
+  {
+    "name": "Loving Choices Pregnancy Center - Springdale",
+    "categories": ["Medical & Dental"],
+    "phone": "(479) 487-2455",
+    "address": "1479 Executive Place, Suite A, Springdale, AR",
+    "website": "https://lovingchoices.org/",
+    "email": "info@lovingchoices.org",
     "notes": ""
   },
   {
     "name": "Welcome Health Free Health Center—Fayetteville",
     "categories": ["Medical & Dental"],
     "phone": "(479) 444-7548",
-    "address": "",
-    "website": "",
-    "email": "",
+    "address": "1100 N. Woolsey Ave, Fayetteville, AR 72703",
+    "website": "https://www.welcomehealthnwa.org/",
+    "email": "welcome@welcomehealthnwa.org",
     "notes": ""
   },
   {
-    "name": "Laundry Love-Rogers",
+    "name": "Laundry Love - Rogers",
     "categories": ["Laundry Assistance"],
-    "phone": "",
+    "phone": "(479) 466-4197",
     "address": "400 N 8th St, Rogers, AR 72756",
-    "website": "",
-    "email": "",
+    "website": "https://laundrylove.org/find-a-location/?location=coin-laundry-rogers-ar",
+    "email": "mattchristiemartin@gmail.com",
     "notes": "Coin Laundry (across from Rogers Post Office). First Friday of the month 6–8 pm (Free laundry and a meal)"
   },
   {
-    "name": "Essentials Outreach",
+    "name": "Laundry Love - Fayetteville",
     "categories": ["Laundry Assistance"],
+    "phone": "(479) 466-5355",
+    "address": "549 W 15th St, FAYETTEVILLE, AR, 72703",
+    "website": "https://laundrylove.org/find-a-location/?location=wash-a-rama-fayetteville-ar",
+    "email": "aslank23@gmail.com",
+    "notes": "Wash-a-Rama. Please call for more details"
+  },
+  {
+    "name": "Essentials Outreach - Gravette",
+    "categories": ["Hygene Products"],
     "phone": "",
-    "address": "",
+    "address": "1870 Limekiln Rd, Gravette, AR 72736-9363",
     "website": "https://www.essentialsoutreach.org/what-we-do",
     "email": "",
-    "notes": "Personal hygiene items and detergent (Gravette, Decatur, Lincoln, Greenland)"
+    "notes": "Every 3rd Saturday 10 to 11 AM. Gravette Senior Center" 
+  },
+  {
+    "name": "Essentials Outreach - Lincoln",
+    "categories": ["Hygene Products"],
+    "phone": "",
+    "address": "107 E School St, Lincoln, AR  72744-8841",
+    "website": "https://www.essentialsoutreach.org/what-we-do",
+    "email": "",
+    "notes": "Every 3rd Saturday 10 to 11 AM. Lincoln School Administration Office" 
+  },
+  {
+    "name": "Essentials Outreach - Greenland",
+    "categories": ["Hygene Products"],
+    "phone": "",
+    "address": "55 N Sandy Ave, Greenland, AR 72737",
+    "website": "https://www.essentialsoutreach.org/what-we-do",
+    "email": "",
+    "notes": "Every 3rd Saturday 10 to 11 AM. Greenland Middle School" 
+  },
+  {
+    "name": "Essentials Outreach - Decatur",
+    "categories": ["Hygene Products"],
+    "phone": "",
+    "address": "1498 Stadium Ave., Decatur, AR 72722",
+    "website": "https://www.essentialsoutreach.org/what-we-do",
+    "email": "",
+    "notes": "Every 2nd Thursday 1 to 4 PM. Decatur High School Ag Building" 
   },
   {
     "name": "Children's Advocacy Center (Child Abuse)",
-    "categories": ["Mental Health", "Important Contacts"],
+    "categories": ["Important Contacts", "Social Services"],
     "phone": "(479) 621-0385",
     "address": "",
     "website": "",

@@ -16,6 +16,8 @@ export const CATEGORIES = {
     'Laundry Assistance',
     'Mental Health',
     'Important Contacts',
+    'Hygene Products',
+    'Social Services'
   ],
   es: [
     'Despensas de Alimentos y Comidas',
@@ -28,6 +30,8 @@ export const CATEGORIES = {
     'Asistencia de Lavandería',
     'Salud Mental',
     'Contactos Importantes',
+    'Productos de Higiene',
+    'Servicios Sociales'
   ],
 } as const
 
