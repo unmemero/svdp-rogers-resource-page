@@ -12,8 +12,8 @@
     "name": "Bella Vista Lutheran Church",
     "categories": ["Despensas de Alimentos y Comidas"],
     "phone": "(479) 855-0272",
-    "address": "",
-    "website": "",
+    "address": "1990 Forest Hills Blvd, Bella Vista, AR 72715",
+    "website": "https://www.bvlutheran.com/",
     "email": "",
     "notes": ""
   },
@@ -21,27 +21,27 @@
     "name": "Calvary Tabernacle",
     "categories": ["Despensas de Alimentos y Comidas"],
     "phone": "(479) 273-1510",
-    "address": "",
-    "website": "",
-    "email": "",
+    "address": "2612 E Central Ave, Bentonville, AR 72712",
+    "website": "calvarychurchnwa",
+    "email": "info@calvarychurchnwa.com",
     "notes": ""
   },
   {
     "name": "Christ the King Lutheran Church",
     "categories": ["Despensas de Alimentos y Comidas"],
     "phone": "(479) 271-7117",
-    "address": "",
-    "website": "",
-    "email": "",
+    "address": "406 W Central Ave, Bentonville, AR 72712",
+    "website": "https://ctkbentonville.org/",
+    "email": "cthekinglutheran@gmail.com",
     "notes": ""
   },
   {
-    "name": "Compassion Center—Springdale",
+    "name": "Compassion 479 — Springdale",
     "categories": ["Despensas de Alimentos y Comidas"],
     "phone": "(479) 717-5662",
-    "address": "",
-    "website": "",
-    "email": "",
+    "address": "3157 W Sunset Ave, Springdale, AR 72762",
+    "website": "https://www.weare479.com/",
+    "email": "charityh@weare479.com",
     "notes": ""
   },
   {
@@ -57,17 +57,17 @@
     "name": "First United Methodist Church",
     "categories": ["Despensas de Alimentos y Comidas", "Asistencia Financiera"],
     "phone": "(479) 273-2712",
-    "address": "",
-    "website": "",
-    "email": "",
+    "address": "220 NW A Street Bentonville, Arkansas 72712",
+    "website": "https://www.bnaz.org/the-community-table",
+    "email": "admin@bnaz.org",
     "notes": ""
   },
   {
     "name": "First Presbyterian Church",
     "categories": ["Despensas de Alimentos y Comidas"],
     "phone": "(479) 273-5450",
-    "address": "",
-    "website": "",
+    "address": "901 NE J St, Bentonville, AR 72712",
+    "website": "https://fpcbentonville.org/",
     "email": "",
     "notes": ""
   },
@@ -84,17 +84,17 @@
     "name": "H2O Food Pantry",
     "categories": ["Despensas de Alimentos y Comidas"],
     "phone": "(479) 644-7598",
-    "address": "",
-    "website": "",
-    "email": "",
+    "address": "2602 SW D St, Bentonville, AR 72712",
+    "website": "http://helpinghandsnwa.org/",
+    "email": "bill@HelpingHandsNWA.org",
     "notes": ""
   },
   {
     "name": "Oasis Food Pantry - Village Bible Church",
     "categories": ["Despensas de Alimentos y Comidas"],
     "phone": "(479) 876-5764",
-    "address": "",
-    "website": "",
+    "address": "1591 Forest Hills Blvd, Bella Vista, AR 72715",
+    "website": "https://vbcbv.org/ministries/oasis-food-pantry/",
     "email": "",
     "notes": ""
   },
@@ -102,26 +102,71 @@
     "name": "Radiant Life Church",
     "categories": ["Despensas de Alimentos y Comidas"],
     "phone": "(479) 273-5182",
-    "address": "",
-    "website": "",
+    "address": "915 W Central Ave, Bentonville, AR 72712",
+    "website": "https://www.radiantlifechurch.com/",
+    "email": "office@radiantlifechurch.com",
+    "notes": ""
+  },
+  {
+    "name": "Samaritan Community Center — Springdale",
+    "categories": ["Despensas de Alimentos y Comidas"],
+    "phone": "(479) 872-1115",
+    "address": "1520 W. Huntsville, Springdale, AR 72764",
+    "website": "https://www.samcc.org/",
     "email": "",
     "notes": ""
   },
   {
-    "name": "Samaritan Café - Rogers y Springdale",
+    "name": "Samaritan Community Center — Rogers",
     "categories": ["Despensas de Alimentos y Comidas"],
-    "phone": "(479) 391-5140",
-    "address": "",
-    "website": "",
+    "phone": "(479) 636-4198",
+    "address": "2910 S. 8th St., Rogers, AR 72758",
+    "website": "https://www.samcc.org/",
     "email": "",
     "notes": ""
   },
   {
-    "name": "Samaritan Market - Rogers y Springdale",
-    "categories": ["Despensas de Alimentos y Comidas"],
-    "phone": "(479) 391-5140",
+    "name": "Samaritan Shop — Springdale",
+    "categories": ["Ropa y artículos del hogar"],
+    "phone": "(479) 751-3440",
+    "address": "2300 W. Sunset Ave, Springdale, AR 72762",
+    "website": "https://www.samcc.org/",
+    "email": "",
+    "notes": ""
+  },
+  {
+    "name": "Samaritan Shop — Rogers",
+    "categories": ["Ropa y artículos del hogar"],
+    "phone": "(479) 246-1060",
+    "address": "2115 W. Walnut St., Rogers, AR 72756",
+    "website": "https://www.samcc.org/",
+    "email": "",
+    "notes": ""
+  },
+  {
+    "name": "Samaritan Care",
+    "categories": ["Asistencia Financiera", "Contactos Importantes"],
+    "phone": "(479) 340-0109",
     "address": "",
-    "website": "",
+    "website": "https://www.samcc.org/",
+    "email": "",
+    "notes": ""
+  },
+  {
+    "name": "Samaritan Dental",
+    "categories": ["Asistencia Médica y Dental"],
+    "phone": "(479) 636-0451",
+    "address": "2910 S. 8th St., Rogers, AR 72758",
+    "website": "https://www.samcc.org/",
+    "email": "",
+    "notes": ""
+  },
+  {
+    "name": "Samaritan Counseling",
+    "categories": ["Salud Mental"],
+    "phone": "(479) 391-5140",
+    "address": "2910 S. 8th St., Rogers, AR 72758",
+    "website": "https://www.samcc.org/",
     "email": "",
     "notes": ""
   },
@@ -396,15 +441,6 @@
     "notes": ""
   },
   {
-    "name": "Samaritan Dental",
-    "categories": ["Asistencia Médica y Dental"],
-    "phone": "(479) 636-0451",
-    "address": "",
-    "website": "",
-    "email": "",
-    "notes": ""
-  },
-  {
     "name": "Welcome Health Free Health Center—Fayetteville",
     "categories": ["Asistencia Médica y Dental"],
     "phone": "(479) 444-7548",
@@ -480,15 +516,6 @@
     "name": "Ozark Guidance Center/Arisa Health",
     "categories": ["Salud Mental"],
     "phone": "(479) 273-9088",
-    "address": "",
-    "website": "",
-    "email": "",
-    "notes": ""
-  },
-  {
-    "name": "Samaritan Community Center",
-    "categories": ["Salud Mental"],
-    "phone": "(479) 391-5140",
     "address": "",
     "website": "",
     "email": "",
