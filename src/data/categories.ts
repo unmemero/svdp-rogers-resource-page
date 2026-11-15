@@ -16,7 +16,7 @@ export const CATEGORIES = {
     'Laundry Assistance',
     'Mental Health',
     'Important Contacts',
-    'Hygene Products',
+    'Hygiene Products',
     'Social Services'
   ],
   es: [

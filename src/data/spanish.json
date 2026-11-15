@@ -1,7 +1,9 @@
 [
   {
     "name": "Sociedad de San Vicente de Paúl - Rogers (Society of Saint Vincent de Paul - Rogers)",
-    "categories": ["Asistencia Financiera"],
+    "categories": [
+      "Asistencia Financiera"
+    ],
     "phone": "(479) 616-1242",
     "address": "",
     "website": "https://www.svdprelief.org/",
@@ -10,7 +12,9 @@
   },
   {
     "name": "Despensa Escolar de Bentonville (Bentonville Schoolhouse Pantry)",
-    "categories": ["Despensas de Alimentos y Comidas"],
+    "categories": [
+      "Despensas de Alimentos y Comidas"
+    ],
     "phone": "",
     "address": "",
     "website": "",
@@ -19,7 +23,9 @@
   },
   {
     "name": "Bella Vista Lutheran Church",
-    "categories": ["Despensas de Alimentos y Comidas"],
+    "categories": [
+      "Despensas de Alimentos y Comidas"
+    ],
     "phone": "(479) 855-0272",
     "address": "1990 Forest Hills Blvd, Bella Vista, AR 72715",
     "website": "https://www.bvlutheran.com/",
@@ -28,7 +34,9 @@
   },
   {
     "name": "Calvary Tabernacle",
-    "categories": ["Despensas de Alimentos y Comidas"],
+    "categories": [
+      "Despensas de Alimentos y Comidas"
+    ],
     "phone": "(479) 273-1510",
     "address": "2612 E Central Ave, Bentonville, AR 72712",
     "website": "calvarychurchnwa",
@@ -37,7 +45,9 @@
   },
   {
     "name": "Christ the King Lutheran Church",
-    "categories": ["Despensas de Alimentos y Comidas"],
+    "categories": [
+      "Despensas de Alimentos y Comidas"
+    ],
     "phone": "(479) 271-7117",
     "address": "406 W Central Ave, Bentonville, AR 72712",
     "website": "https://ctkbentonville.org/",
@@ -46,7 +56,9 @@
   },
   {
     "name": "Compassion 479 — Springdale",
-    "categories": ["Despensas de Alimentos y Comidas"],
+    "categories": [
+      "Despensas de Alimentos y Comidas"
+    ],
     "phone": "(479) 717-5662",
     "address": "3157 W Sunset Ave, Springdale, AR 72762",
     "website": "https://www.weare479.com/",
@@ -55,7 +67,9 @@
   },
   {
     "name": "Community Table—Bentonville Community Church",
-    "categories": ["Despensas de Alimentos y Comidas"],
+    "categories": [
+      "Despensas de Alimentos y Comidas"
+    ],
     "phone": "(479) 273-2132",
     "address": "",
     "website": "",
@@ -64,7 +78,10 @@
   },
   {
     "name": "First United Methodist Church",
-    "categories": ["Despensas de Alimentos y Comidas", "Asistencia Financiera"],
+    "categories": [
+      "Despensas de Alimentos y Comidas",
+      "Asistencia Financiera"
+    ],
     "phone": "(479) 273-2712",
     "address": "220 NW A Street Bentonville, Arkansas 72712",
     "website": "https://www.bnaz.org/the-community-table",
@@ -73,7 +90,9 @@
   },
   {
     "name": "First Presbyterian Church",
-    "categories": ["Despensas de Alimentos y Comidas"],
+    "categories": [
+      "Despensas de Alimentos y Comidas"
+    ],
     "phone": "(479) 273-5450",
     "address": "901 NE J St, Bentonville, AR 72712",
     "website": "https://fpcbentonville.org/",
@@ -82,7 +101,11 @@
   },
   {
     "name": "Helping Hands",
-    "categories": ["Despensas de Alimentos y Comidas", "Asistencia Financiera"],
+    "categories": [
+      "Despensas de Alimentos y Comidas",
+      "Asistencia Financiera",
+      "Ropa y artículos del hogar"
+    ],
     "phone": "(479) 273-2511",
     "address": "",
     "website": "",
@@ -91,7 +114,9 @@
   },
   {
     "name": "H2O Food Pantry",
-    "categories": ["Despensas de Alimentos y Comidas"],
+    "categories": [
+      "Despensas de Alimentos y Comidas"
+    ],
     "phone": "(479) 644-7598",
     "address": "2602 SW D St, Bentonville, AR 72712",
     "website": "http://helpinghandsnwa.org/",
@@ -100,7 +125,9 @@
   },
   {
     "name": "Oasis Food Pantry - Village Bible Church",
-    "categories": ["Despensas de Alimentos y Comidas"],
+    "categories": [
+      "Despensas de Alimentos y Comidas"
+    ],
     "phone": "(479) 876-5764",
     "address": "1591 Forest Hills Blvd, Bella Vista, AR 72715",
     "website": "https://vbcbv.org/ministries/oasis-food-pantry/",
@@ -109,7 +136,9 @@
   },
   {
     "name": "Radiant Life Church",
-    "categories": ["Despensas de Alimentos y Comidas"],
+    "categories": [
+      "Despensas de Alimentos y Comidas"
+    ],
     "phone": "(479) 273-5182",
     "address": "915 W Central Ave, Bentonville, AR 72712",
     "website": "https://www.radiantlifechurch.com/",
@@ -118,7 +147,9 @@
   },
   {
     "name": "Conferencia Benevolente St. Stephen (St. Stephen Benevolent Conference)",
-    "categories": ["Asistencia Financiera"],
+    "categories": [
+      "Asistencia Financiera"
+    ],
     "phone": "(479) 696-9361",
     "address": "1300 NE J St, Bentonville, AR 72712",
     "website": "https://ststephenbentonville.com/ourparish/ssbc/",
@@ -127,7 +158,9 @@
   },
   {
     "name": "Samaritan Community Center — Springdale",
-    "categories": ["Despensas de Alimentos y Comidas"],
+    "categories": [
+      "Despensas de Alimentos y Comidas"
+    ],
     "phone": "(479) 872-1115",
     "address": "1520 W. Huntsville, Springdale, AR 72764",
     "website": "https://www.samcc.org/",
@@ -136,7 +169,9 @@
   },
   {
     "name": "Samaritan Community Center — Rogers",
-    "categories": ["Despensas de Alimentos y Comidas"],
+    "categories": [
+      "Despensas de Alimentos y Comidas"
+    ],
     "phone": "(479) 636-4198",
     "address": "2910 S. 8th St, Rogers, AR 72758",
     "website": "https://www.samcc.org/",
@@ -145,7 +180,9 @@
   },
   {
     "name": "Samaritan Shop — Springdale",
-    "categories": ["Ropa y artículos del hogar"],
+    "categories": [
+      "Ropa y artículos del hogar"
+    ],
     "phone": "(479) 751-3440",
     "address": "2300 W. Sunset Ave, Springdale, AR 72762",
     "website": "https://www.samcc.org/",
@@ -154,7 +191,9 @@
   },
   {
     "name": "Samaritan Shop — Rogers",
-    "categories": ["Ropa y artículos del hogar"],
+    "categories": [
+      "Ropa y artículos del hogar"
+    ],
     "phone": "(479) 246-1060",
     "address": "2115 W. Walnut St., Rogers, AR 72756",
     "website": "https://www.samcc.org/",
@@ -163,7 +202,10 @@
   },
   {
     "name": "Samaritan Care",
-    "categories": ["Asistencia Financiera", "Contactos Importantes"],
+    "categories": [
+      "Asistencia Financiera",
+      "Contactos Importantes"
+    ],
     "phone": "(479) 340-0109",
     "address": "",
     "website": "https://www.samcc.org/",
@@ -172,7 +214,9 @@
   },
   {
     "name": "Samaritan Dental",
-    "categories": ["Asistencia Médica y Dental"],
+    "categories": [
+      "Asistencia Médica y Dental"
+    ],
     "phone": "(479) 636-0451",
     "address": "2910 S. 8th St., Rogers, AR 72758",
     "website": "https://www.samcc.org/",
@@ -181,7 +225,9 @@
   },
   {
     "name": "Samaritan Counseling",
-    "categories": ["Salud Mental"],
+    "categories": [
+      "Salud Mental"
+    ],
     "phone": "(479) 391-5140",
     "address": "2910 S. 8th St., Rogers, AR 72758",
     "website": "https://www.samcc.org/",
@@ -190,7 +236,9 @@
   },
   {
     "name": "Second Street Pantry",
-    "categories": ["Despensas de Alimentos y Comidas"],
+    "categories": [
+      "Despensas de Alimentos y Comidas"
+    ],
     "phone": "(479) 273-2712",
     "address": "201 NW 2nd Street, Bentonville, AR 72712",
     "website": "https://2ndstpantry.org/",
@@ -199,7 +247,9 @@
   },
   {
     "name": "Iglesia Católica St. Stephen (St. Stephen Catholic Church)",
-    "categories": ["Despensas de Alimentos y Comidas"],
+    "categories": [
+      "Despensas de Alimentos y Comidas"
+    ],
     "phone": "(479) 273-1240",
     "address": "1300 NE J St Trail, Bentonville, AR 72712",
     "website": "https://ststephenbentonville.com/",
@@ -208,7 +258,9 @@
   },
   {
     "name": "For the Love NWA - Bentonville",
-    "categories": ["Despensas de Alimentos y Comidas"],
+    "categories": [
+      "Despensas de Alimentos y Comidas"
+    ],
     "phone": "",
     "address": "306 SW A. Street, Bentonville, AR 72712",
     "website": "https://www.forthelovenwa.com/",
@@ -217,7 +269,9 @@
   },
   {
     "name": "For the Love NWA - Rogers",
-    "categories": ["Despensas de Alimentos y Comidas"],
+    "categories": [
+      "Despensas de Alimentos y Comidas"
+    ],
     "phone": "",
     "address": "203 S Promenade Blvd, Rogers, AR, 72758",
     "website": "https://www.forthelovenwa.com/",
@@ -226,7 +280,9 @@
   },
   {
     "name": "For the Love NWA - Springdale",
-    "categories": ["Despensas de Alimentos y Comidas"],
+    "categories": [
+      "Despensas de Alimentos y Comidas"
+    ],
     "phone": "",
     "address": "922 E Emma Ave, Springdale, AR 72764",
     "website": "https://www.forthelovenwa.com/",
@@ -235,7 +291,9 @@
   },
   {
     "name": "For the Love NWA - Fayetteville",
-    "categories": ["Despensas de Alimentos y Comidas"],
+    "categories": [
+      "Despensas de Alimentos y Comidas"
+    ],
     "phone": "",
     "address": "612 S College Ave, Fayetteville, AR 72701",
     "website": "https://www.forthelovenwa.com/",
@@ -244,7 +302,9 @@
   },
   {
     "name": "Table 7 three",
-    "categories": ["Despensas de Alimentos y Comidas"],
+    "categories": [
+      "Despensas de Alimentos y Comidas"
+    ],
     "phone": "(479) 287-7927",
     "address": "2863 Old Missouri Road, Fayetteville, Arkansas, 72703-3777",
     "website": "https://www.table7three.com/",
@@ -253,7 +313,9 @@
   },
   {
     "name": "To The Table NWA",
-    "categories": ["Despensas de Alimentos y Comidas"],
+    "categories": [
+      "Despensas de Alimentos y Comidas"
+    ],
     "phone": "(479) 224-9613",
     "address": "",
     "website": "https://docs.google.com/forms/d/e/1FAIpQLSeuQRY9Nf7qzLpa3XoojqsKfrdgiatPRNVsFfKcu_MDsjKNkQ/viewform?pli=1",
@@ -262,7 +324,9 @@
   },
   {
     "name": "Banco de Alimentos de NWA (NWA Food Bank)",
-    "categories": ["Despensas de Alimentos y Comidas"],
+    "categories": [
+      "Despensas de Alimentos y Comidas"
+    ],
     "phone": "(479) 872-8774",
     "address": "1604 Honeysuckle Street, Lowell AR 72745",
     "website": "https://www.nwafoodbank.org/",
@@ -271,7 +335,10 @@
   },
   {
     "name": "Departamento de Servicios Humanos del Condado de Benton (Benton County DHS)",
-    "categories": ["Asistencia Financiera"],
+    "categories": [
+      "Asistencia Financiera",
+      "Servicios Sociales"
+    ],
     "phone": "(479) 273-9011",
     "address": "900 SE 13th Court, Bentonville, AR 72712-5998",
     "website": "https://humanservices.arkansas.gov/",
@@ -280,7 +347,9 @@
   },
   {
     "name": "Black Hills Cares",
-    "categories": ["Asistencia Financiera"],
+    "categories": [
+      "Asistencia Financiera"
+    ],
     "phone": "(866) 489-6983",
     "address": "",
     "website": "https://www.blackhillsenergy.com/community/black-hills-cares",
@@ -289,7 +358,11 @@
   },
   {
     "name": "Salvation Army - Rogers",
-    "categories": ["Asistencia Financiera", "Despensas de Alimentos y Comidas", "Salud Mental"],
+    "categories": [
+      "Asistencia Financiera",
+      "Despensas de Alimentos y Comidas",
+      "Salud Mental"
+    ],
     "phone": "(479) 636-6805",
     "address": "504 N Dixieland Rd, ROGERS, Arkansas 72756",
     "website": "https://www.salvationarmyusa.org/ar/rogers/",
@@ -298,7 +371,11 @@
   },
   {
     "name": "Salvation Army - Bentonville",
-    "categories": ["Refugios de Emergencia", "Salud Mental", "Despensas de Alimentos y Comidas"],
+    "categories": [
+      "Refugios de Emergencia",
+      "Salud Mental",
+      "Despensas de Alimentos y Comidas"
+    ],
     "phone": "(479) 271-9545",
     "address": "3305 SW I St, Bentonville, Arkansas 72712",
     "website": "https://www.salvationarmyusa.org/ar/bentonville/sw-i-st/",
@@ -307,7 +384,12 @@
   },
   {
     "name": "Salvation Army - Springdale Corps",
-    "categories": ["Asistencia Financiera", "Despensas de Alimentos y Comidas", "Ropa y artículos del hogar", "Salud Mental"],
+    "categories": [
+      "Asistencia Financiera",
+      "Despensas de Alimentos y Comidas",
+      "Ropa y artículos del hogar",
+      "Salud Mental"
+    ],
     "phone": "(479) 751-7352",
     "address": "315 Holcomb St, Springdale, AR, 72764",
     "website": "https://satruck.org/",
@@ -316,7 +398,9 @@
   },
   {
     "name": "Salvation Army - Springdale Thrift Store",
-    "categories": ["Ropa y artículos del hogar"],
+    "categories": [
+      "Ropa y artículos del hogar"
+    ],
     "phone": "(479) 756-3454",
     "address": "329 Holcomb St, Springdale, AR, 72764",
     "website": "https://www.salvationarmyusa.org/ar/rogers/",
@@ -325,7 +409,12 @@
   },
   {
     "name": "Salvation Army - Fayetteville",
-    "categories": ["Asistencia Financiera", "Despensas de Alimentos y Comidas", "Ropa y artículos del hogar", "Salud Mental"],
+    "categories": [
+      "Asistencia Financiera",
+      "Despensas de Alimentos y Comidas",
+      "Ropa y artículos del hogar",
+      "Salud Mental"
+    ],
     "phone": "(479) 521-2151",
     "address": "219 W 15th St, Fayetteville, AR, 72701",
     "website": "http://www.nwasalvationarmy.org/",
@@ -334,7 +423,13 @@
   },
   {
     "name": "Salvation Army - Area Command",
-    "categories": ["Asistencia Financiera", "Despensas de Alimentos y Comidas", "Ropa y artículos del hogar", "Salud Mental", "Refugios de Emergencia"],
+    "categories": [
+      "Asistencia Financiera",
+      "Despensas de Alimentos y Comidas",
+      "Ropa y artículos del hogar",
+      "Salud Mental",
+      "Refugios de Emergencia"
+    ],
     "phone": "(479) 521-2151",
     "address": "219 W 15th St, Fayetteville, AR, 72701",
     "website": "https://www.salvationarmyusa.org/usa-southern-territory/arkansas-and-oklahoma/northwest-arkansas-area-command/",
@@ -343,7 +438,11 @@
   },
   {
     "name": "Our Healthy Communities—Rogers",
-    "categories": ["Asistencia Financiera"],
+    "categories": [
+      "Asistencia Financiera",
+      "Despensas de Alimentos y Comidas",
+      "Servicios Sociales"
+    ],
     "phone": "(479) 636-7301",
     "address": "506 East Spruce St, Rogers, AR 72756",
     "website": "https://www.ohcnwa.org/",
@@ -352,7 +451,10 @@
   },
   {
     "name": "Havenwood",
-    "categories": ["Refugios de Emergencia", "Vivienda de Transición"],
+    "categories": [
+      "Refugios de Emergencia",
+      "Vivienda de Transición"
+    ],
     "phone": "(479) 273-1060",
     "address": "808 N. Main, Bentonville, Arkansas 72712",
     "website": "https://www.nwahavenwood.org/",
@@ -361,7 +463,11 @@
   },
   {
     "name": "Refugio de Mujeres de NWA—Rogers (NWA Women's Shelter)",
-    "categories": ["Refugios de Emergencia"],
+    "categories": [
+      "Refugios de Emergencia",
+      "Contactos Importantes",
+      "Servicios Sociales"
+    ],
     "phone": "(800) 775-9011",
     "address": "1622 S 8th St, Rogers, AR 72756",
     "website": "https://nwaws.org/",
@@ -370,7 +476,12 @@
   },
   {
     "name": "Refugio de Mujeres Peace at Home (Peace at Home Women's Shelter)",
-    "categories": ["Refugios de Emergencia"],
+    "categories": [
+      "Refugios de Emergencia",
+      "Contactos Importantes",
+      "Salud Mental",
+      "Servicios Sociales"
+    ],
     "phone": "(479) 442-9811",
     "address": "",
     "website": "https://peaceathomeshelter.org/",
@@ -379,7 +490,11 @@
   },
   {
     "name": "Restoration Village—Rogers",
-    "categories": ["Refugios de Emergencia"],
+    "categories": [
+      "Refugios de Emergencia",
+      "Vivienda de Transición",
+      "Salud Mental"
+    ],
     "phone": "(479) 631-7345",
     "address": "2215 Little Flock Drive, Rogers, AR, 72756",
     "website": "https://www.homelessshelterdirectory.org/shelter/ar_restoration-village",
@@ -388,7 +503,10 @@
   },
   {
     "name": "Saving Grace — Rogers",
-    "categories": ["Refugios de Emergencia", "Vivienda de Transición"],
+    "categories": [
+      "Refugios de Emergencia",
+      "Vivienda de Transición"
+    ],
     "phone": "(479) 636-1133",
     "address": "12161 Hwy 72 West, Bentonville, AR 72712",
     "website": "https://www.savinggracenwa.org/",
@@ -397,7 +515,11 @@
   },
   {
     "name": "Souls Harbor — Rogers",
-    "categories": ["Refugios de Emergencia"],
+    "categories": [
+      "Refugios de Emergencia",
+      "Vivienda de Transición",
+      "Salud Mental"
+    ],
     "phone": "(479) 480-4519",
     "address": "1206 N 2nd St, Rogers, AR 72756",
     "website": "https://www.facebook.com/soulsharbornwa/",
@@ -405,143 +527,290 @@
     "notes": ""
   },
   {
-    "name": "7Hills Homeless Center — Fayetteville",
-    "categories": ["Refugios de Emergencia"],
+    "name": "Centro de Día 7Hills (7Hills Day Center)",
+    "categories": [
+      "Despensas de Alimentos y Comidas",
+      "Ropa y artículos del hogar",
+      "Productos de Higiene",
+      "Salud Mental",
+      "Contactos Importantes",
+      "Servicios Sociales"
+    ],
     "phone": "(479) 966-4378",
-    "address": "",
-    "website": "",
+    "address": "1832 S School Ave, Fayetteville, AR 72701",
+    "website": "https://www.7hillscenter.org/day-center",
+    "email": "",
+    "notes": ""
+  },
+  {
+    "name": "Refugio 7Hills (7Hills Shelter)",
+    "categories": [
+      "Despensas de Alimentos y Comidas",
+      "Ropa y artículos del hogar",
+      "Productos de Higiene",
+      "Salud Mental",
+      "Contactos Importantes",
+      "Asistencia de Lavandería",
+      "Refugios de Emergencia",
+      "Servicios Sociales"
+    ],
+    "phone": "(479) 966-4378",
+    "address": "915 S Seven Hills Ct, Fayetteville, AR 72701",
+    "website": "https://www.7hillscenter.org/shelter",
     "email": "",
     "notes": ""
   },
   {
     "name": "Community Development Center",
-    "categories": ["Asistencia de Vivienda"],
+    "categories": [
+      "Asistencia de Vivienda"
+    ],
     "phone": "(479) 273-7344",
-    "address": "",
-    "website": "",
+    "address": "808 N Main St #1, Bentonville, AR 72712",
+    "website": "https://www.cd-nwa.com/",
     "email": "",
     "notes": ""
   },
   {
     "name": "Hark NWA",
-    "categories": ["Asistencia de Vivienda"],
-    "phone": "",
+    "categories": [
+      "Asistencia de Vivienda",
+      "Asistencia Financiera",
+      "Servicios Sociales",
+      "Contactos Importantes"
+    ],
+    "phone": "211",
     "address": "",
     "website": "https://www.harknwa.com",
     "email": "",
     "notes": ""
   },
   {
-    "name": "Peace at Home (Asistencia de Vivienda)",
-    "categories": ["Asistencia de Vivienda"],
-    "phone": "(877) 442-9811",
+    "name": "Refugio Familiar Peace at Home (Peace at Home Family Shelter)",
+    "categories": [
+      "Asistencia de Vivienda",
+      "Refugios de Emergencia",
+      "Salud Mental",
+      "Contactos Importantes",
+      "Servicios Sociales"
+    ],
+    "phone": "1 (877) 442-9811",
     "address": "",
-    "website": "",
-    "email": "",
+    "website": "https://peaceathomeshelter.org/programs-services/",
+    "email": "help@peaceathomeshelter.com",
+    "notes": ""
+  },
+  {
+    "name": "Tienda de Segunda Mano Peace at Home (Peace at Home Thrift Store)",
+    "categories": [
+      "Ropa y artículos del hogar"
+    ],
+    "phone": "(479) 973-9571",
+    "address": "1200 Garland Ave #4, Fayetteville, AR 72703",
+    "website": "https://peaceathomeshelter.org/programs-services/",
+    "email": "help@peaceathomeshelter.com",
     "notes": ""
   },
   {
     "name": "Autoridad de Vivienda de Siloam Springs (Siloam Springs Housing Authority)",
-    "categories": ["Asistencia de Vivienda"],
+    "categories": [
+      "Asistencia de Vivienda"
+    ],
     "phone": "(479) 524-8117",
-    "address": "",
-    "website": "",
+    "address": "1255 W Tulsa St, Siloam Springs, AR 72761",
+    "website": "https://www.siloamspringshousing.org/o/ssha/page/home/",
     "email": "",
-    "notes": "Vivienda de la Sección 8 (Section 8 Housing)"
+    "notes": "Sección 8 de Vivienda"
   },
   {
     "name": "ARcare Bentonville Medical",
-    "categories": ["Asistencia Médica y Dental", "Salud Mental"],
+    "categories": [
+      "Asistencia Médica y Dental",
+      "Salud Mental"
+    ],
     "phone": "(479) 271-7634",
-    "address": "",
-    "website": "",
+    "address": "2805 SE Midcities Dr, Bentonville, AR 72712",
+    "website": "https://www.arcare.net/locations/bentonville-medical/",
     "email": "",
     "notes": ""
   },
   {
     "name": "ARcare Pea Ridge Medical",
-    "categories": ["Asistencia Médica y Dental"],
+    "categories": [
+      "Asistencia Médica y Dental"
+    ],
     "phone": "(479) 451-0579",
-    "address": "",
-    "website": "",
+    "address": "145 N Curtis Ave, Pea Ridge, AR 72751",
+    "website": "https://www.arcare.net/locations/pea-ridge-medical/",
     "email": "",
     "notes": ""
   },
   {
-    "name": "Departamento de Salud del Condado de Benton—Rogers",
-    "categories": ["Asistencia Médica y Dental"],
+    "name": "Departamento de Salud del Condado de Benton — Rogers",
+    "categories": [
+      "Asistencia Médica y Dental",
+      "Servicios Sociales"
+    ],
     "phone": "(479) 986-1300",
-    "address": "",
-    "website": "",
+    "address": " 1200 W Walnut St, Suite 2200, Rogers, AR 72756",
+    "website": "https://healthy.arkansas.gov/breastcare-provider/benton-county-lhu-rogers-rogers/",
     "email": "",
     "notes": ""
   },
   {
-    "name": "Community Clinic NWA (Médica)—Rogers",
-    "categories": ["Asistencia Médica y Dental"],
+    "name": "Community Clinic NWA — Rogers",
+    "categories": [
+      "Asistencia Médica y Dental",
+      "Salud Mental"
+    ],
     "phone": "(855) 438-2280",
-    "address": "",
-    "website": "",
-    "email": "",
-    "notes": ""
-  },
-  {
-    "name": "Community Clinic NWA (Dental)—Rogers",
-    "categories": ["Asistencia Médica y Dental"],
-    "phone": "(855) 438-2280",
-    "address": "",
-    "website": "",
+    "address": "1233 W. Poplar St, Rogers, AR 72756",
+    "website": "https://communityclinic.net/location/primary-specialty-care-rogers-ar-poplar-st/",
     "email": "",
     "notes": ""
   },
   {
     "name": "Asistencia para Solicitudes DDS/TEFRA",
-    "categories": ["Asistencia Médica y Dental"],
+    "categories": [
+      "Asistencia Médica y Dental",
+      "Servicios Sociales"
+    ],
     "phone": "(870) 423-3351",
     "address": "",
-    "website": "",
+    "website": "https://humanservices.arkansas.gov/divisions-shared-services/medical-services/healthcare-programs/tefra/",
     "email": "",
-    "notes": "Pregunte por la Unidad TEFRA (Ask for the TEFRA Unit)"
+    "notes": "Pida hablar con la Unidad de TEFRA"
   },
   {
-    "name": "Loving Choices Pregnancy Center",
-    "categories": ["Asistencia Médica y Dental"],
+    "name": "Loving Choices Pregnancy Center - Rogers",
+    "categories": [
+      "Asistencia Médica y Dental",
+      "Ropa y artículos del hogar",
+      "Productos de Higiene",
+      "Servicios Sociales"
+    ],
     "phone": "(479) 631-5951",
-    "address": "",
-    "website": "",
-    "email": "",
+    "address": "3610 W Southern Hills Blvd, Suite B, Rogers, AR 72758",
+    "website": "https://lovingchoices.org/",
+    "email": "info@lovingchoices.org",
+    "notes": ""
+  },
+  {
+    "name": "Loving Choices Pregnancy Center - Fayetteville",
+    "categories": [
+      "Asistencia Médica y Dental",
+      "Ropa y artículos del hogar",
+      "Productos de Higiene",
+      "Servicios Sociales"
+    ],
+    "phone": "(479) 521-6655",
+    "address": "275 South Duncan, Suite B, Fayetteville, AR 72701",
+    "website": "https://lovingchoices.org/",
+    "email": "info@lovingchoices.org",
+    "notes": ""
+  },
+  {
+    "name": "Loving Choices Pregnancy Center - Springdale",
+    "categories": [
+      "Asistencia Médica y Dental",
+      "Ropa y artículos del hogar",
+      "Productos de Higiene",
+      "Servicios Sociales"
+    ],
+    "phone": "(479) 487-2455",
+    "address": "1479 Executive Place, Suite A, Springdale, AR",
+    "website": "https://lovingchoices.org/",
+    "email": "info@lovingchoices.org",
     "notes": ""
   },
   {
     "name": "Welcome Health Free Health Center—Fayetteville",
-    "categories": ["Asistencia Médica y Dental"],
+    "categories": [
+      "Asistencia Médica y Dental"
+    ],
     "phone": "(479) 444-7548",
-    "address": "",
-    "website": "",
-    "email": "",
+    "address": "1100 N. Woolsey Ave, Fayetteville, AR 72703",
+    "website": "https://www.welcomehealthnwa.org/",
+    "email": "welcome@welcomehealthnwa.org",
     "notes": ""
   },
   {
-    "name": "Laundry Love-Rogers",
-    "categories": ["Asistencia de Lavandería"],
-    "phone": "",
+    "name": "Laundry Love - Rogers",
+    "categories": [
+      "Asistencia de Lavandería",
+      "Despensas de Alimentos y Comidas"
+    ],
+    "phone": "(479) 466-4197",
     "address": "400 N 8th St, Rogers, AR 72756",
-    "website": "",
-    "email": "",
-    "notes": "Coin Laundry (frente a la oficina de correos de Rogers). Primer viernes del mes de 6:00 a 8:00 PM (lavandería y comida gratis)"
+    "website": "https://laundrylove.org/find-a-location/?location=coin-laundry-rogers-ar",
+    "email": "mattchristiemartin@gmail.com",
+    "notes": "Lavandería Coin Laundry (frente a la oficina de correos de Rogers). Primer viernes del mes de 6:00 a 8:00 PM (lavandería y comida gratis)"
   },
   {
-    "name": "Essentials Outreach",
-    "categories": ["Asistencia de Lavandería"],
+    "name": "Laundry Love - Fayetteville",
+    "categories": [
+      "Asistencia de Lavandería"
+    ],
+    "phone": "(479) 466-5355",
+    "address": "549 W 15th St, FAYETTEVILLE, AR, 72703",
+    "website": "https://laundrylove.org/find-a-location/?location=wash-a-rama-fayetteville-ar",
+    "email": "aslank23@gmail.com",
+    "notes": "Wash-a-Rama. Por favor llame para más detalles"
+  },
+  {
+    "name": "Essentials Outreach - Gravette",
+    "categories": [
+      "Productos de Higiene",
+      "Asistencia de Lavandería"
+    ],
     "phone": "",
-    "address": "",
+    "address": "1870 Limekiln Rd, Gravette, AR 72736-9363",
     "website": "https://www.essentialsoutreach.org/what-we-do",
     "email": "",
-    "notes": "Artículos de higiene personal y detergente (Gravette, Decatur, Lincoln, Greenland)"
+    "notes": "Cada 3er sábado de 10:00 a 11:00 AM. Gravette Senior Center"
+  },
+  {
+    "name": "Essentials Outreach - Lincoln",
+    "categories": [
+      "Productos de Higiene",
+      "Asistencia de Lavandería"
+    ],
+    "phone": "",
+    "address": "107 E School St, Lincoln, AR  72744-8841",
+    "website": "https://www.essentialsoutreach.org/what-we-do",
+    "email": "",
+    "notes": "Cada 3er sábado de 10:00 a 11:00 AM. Oficina de Administración Escolar de Lincoln"
+  },
+  {
+    "name": "Essentials Outreach - Greenland",
+    "categories": [
+      "Productos de Higiene",
+      "Asistencia de Lavandería"
+    ],
+    "phone": "",
+    "address": "55 N Sandy Ave, Greenland, AR 72737",
+    "website": "https://www.essentialsoutreach.org/what-we-do",
+    "email": "",
+    "notes": "Cada 3er sábado de 10:00 a 11:00 AM. Greenland Middle School"
+  },
+  {
+    "name": "Essentials Outreach - Decatur",
+    "categories": [
+      "Productos de Higiene",
+      "Asistencia de Lavandería"
+    ],
+    "phone": "",
+    "address": "1498 Stadium Ave., Decatur, AR 72722",
+    "website": "https://www.essentialsoutreach.org/what-we-do",
+    "email": "",
+    "notes": "Cada 2do jueves de 1:00 a 4:00 PM. Decatur High School Ag Building"
   },
   {
     "name": "Children's Advocacy Center (Abuso Infantil)",
-    "categories": ["Salud Mental", "Contactos Importantes"],
+    "categories": [
+      "Contactos Importantes",
+      "Servicios Sociales"
+    ],
     "phone": "(479) 621-0385",
     "address": "",
     "website": "",
@@ -550,7 +819,9 @@
   },
   {
     "name": "Eason Counseling and Associates",
-    "categories": ["Salud Mental"],
+    "categories": [
+      "Salud Mental"
+    ],
     "phone": "(479) 435-4207",
     "address": "",
     "website": "",
@@ -559,7 +830,9 @@
   },
   {
     "name": "Friendship Community Care/Connections",
-    "categories": ["Salud Mental"],
+    "categories": [
+      "Salud Mental"
+    ],
     "phone": "(479) 249-6379",
     "address": "",
     "website": "",
@@ -568,7 +841,9 @@
   },
   {
     "name": "Community Counseling Clinic",
-    "categories": ["Salud Mental"],
+    "categories": [
+      "Salud Mental"
+    ],
     "phone": "(479) 524-7300",
     "address": "",
     "website": "",
@@ -577,7 +852,9 @@
   },
   {
     "name": "Mercy Behavioral Health",
-    "categories": ["Salud Mental"],
+    "categories": [
+      "Salud Mental"
+    ],
     "phone": "(479) 717-7626",
     "address": "",
     "website": "",
@@ -586,7 +863,9 @@
   },
   {
     "name": "Ozark Guidance Center/Arisa Health",
-    "categories": ["Salud Mental"],
+    "categories": [
+      "Salud Mental"
+    ],
     "phone": "(479) 273-9088",
     "address": "",
     "website": "",
@@ -595,7 +874,9 @@
   },
   {
     "name": "Springwoods Behavioral Health—Fayetteville",
-    "categories": ["Salud Mental"],
+    "categories": [
+      "Salud Mental"
+    ],
     "phone": "(888) 521-6014",
     "address": "",
     "website": "",
@@ -604,7 +885,9 @@
   },
   {
     "name": "The Joshua Center",
-    "categories": ["Salud Mental"],
+    "categories": [
+      "Salud Mental"
+    ],
     "phone": "(479) 268-4557",
     "address": "",
     "website": "",
@@ -613,7 +896,9 @@
   },
   {
     "name": "Teen Action Support Center",
-    "categories": ["Salud Mental"],
+    "categories": [
+      "Salud Mental"
+    ],
     "phone": "(479) 636-8272",
     "address": "",
     "website": "",
@@ -622,7 +907,9 @@
   },
   {
     "name": "Vantage Point Behavioral Health (Hospitalización)",
-    "categories": ["Salud Mental"],
+    "categories": [
+      "Salud Mental"
+    ],
     "phone": "(479) 521-5731",
     "address": "",
     "website": "",
@@ -631,7 +918,9 @@
   },
   {
     "name": "Al-Anon y ALATEEN",
-    "categories": ["Contactos Importantes"],
+    "categories": [
+      "Contactos Importantes"
+    ],
     "phone": "(888) 425-2666",
     "address": "",
     "website": "",
@@ -640,7 +929,9 @@
   },
   {
     "name": "Línea Directa de Abuso de Arkansas (Arkansas Abuse Hotline)",
-    "categories": ["Contactos Importantes"],
+    "categories": [
+      "Contactos Importantes"
+    ],
     "phone": "(800) 482-5964",
     "address": "",
     "website": "",
@@ -649,7 +940,9 @@
   },
   {
     "name": "AR Teen Connect",
-    "categories": ["Contactos Importantes"],
+    "categories": [
+      "Contactos Importantes"
+    ],
     "phone": "(479) 558-9889",
     "address": "",
     "website": "",
@@ -658,7 +951,9 @@
   },
   {
     "name": "Coalición de Arkansas Contra la Agresión Sexual (Arkansas Coalition Against Sexual Assault)",
-    "categories": ["Contactos Importantes"],
+    "categories": [
+      "Contactos Importantes"
+    ],
     "phone": "(501) 246-3276",
     "address": "",
     "website": "",
@@ -667,7 +962,9 @@
   },
   {
     "name": "Boys and Girls Club del Condado de Benton",
-    "categories": ["Contactos Importantes"],
+    "categories": [
+      "Contactos Importantes"
+    ],
     "phone": "(479) 273-7187",
     "address": "",
     "website": "",
@@ -676,7 +973,9 @@
   },
   {
     "name": "Lifeline Crisis Center",
-    "categories": ["Contactos Importantes"],
+    "categories": [
+      "Contactos Importantes"
+    ],
     "phone": "(800) 273-8255",
     "address": "",
     "website": "",
@@ -685,7 +984,9 @@
   },
   {
     "name": "Línea Directa Love is Respect",
-    "categories": ["Contactos Importantes"],
+    "categories": [
+      "Contactos Importantes"
+    ],
     "phone": "(866) 331-9474",
     "address": "",
     "website": "",
@@ -694,7 +995,9 @@
   },
   {
     "name": "Centro Nacional de Recursos Contra la Trata de Personas (National Human Trafficking Resource Center)",
-    "categories": ["Contactos Importantes"],
+    "categories": [
+      "Contactos Importantes"
+    ],
     "phone": "(888) 373-7888",
     "address": "",
     "website": "",
@@ -703,7 +1006,9 @@
   },
   {
     "name": "Centro de NWA Contra la Agresión Sexual (NWA Center for Sexual Assault)",
-    "categories": ["Contactos Importantes"],
+    "categories": [
+      "Contactos Importantes"
+    ],
     "phone": "(800) 656-4673",
     "address": "",
     "website": "",
@@ -712,7 +1017,9 @@
   },
   {
     "name": "Fondo de Becas para Padres Solteros (Single Parent Scholarship Fund)",
-    "categories": ["Contactos Importantes"],
+    "categories": [
+      "Contactos Importantes"
+    ],
     "phone": "(479) 254-8550",
     "address": "",
     "website": "",
@@ -721,7 +1028,10 @@
   },
   {
     "name": "Línea de Prevención del Suicidio y Crisis (Suicide & Crisis Lifeline)",
-    "categories": ["Contactos Importantes", "Salud Mental"],
+    "categories": [
+      "Contactos Importantes",
+      "Salud Mental"
+    ],
     "phone": "988",
     "address": "",
     "website": "",

@@ -82,7 +82,7 @@
   },
   {
     "name": "Helping Hands",
-    "categories": ["Food Pantries & Meals", "Financial Assistance"],
+    "categories": ["Food Pantries & Meals", "Financial Assistance", "Clothing and household items"],
     "phone": "(479) 273-2511",
     "address": "",
     "website": "",
@@ -271,7 +271,7 @@
   },
   {
     "name": "Benton County DHS",
-    "categories": ["Financial Assistance"],
+    "categories": ["Financial Assistance", "Social Services"],
     "phone": "(479) 273-9011",
     "address": "900 SE 13th Court, Bentonville, AR 72712-5998",
     "website": "https://humanservices.arkansas.gov/",
@@ -343,7 +343,7 @@
   },
   {
     "name": "Our Healthy Communities—Rogers",
-    "categories": ["Financial Assistance"],
+    "categories": ["Financial Assistance", "Food Pantries & Meals", "Social Services"],
     "phone": "(479) 636-7301",
     "address": "506 East Spruce St, Rogers, AR 72756",
     "website": "https://www.ohcnwa.org/",
@@ -361,7 +361,7 @@
   },
   {
     "name": "NWA Women's Shelter—Rogers",
-    "categories": ["Emergency Shelters"],
+    "categories": ["Emergency Shelters", "Important Contacts", "Social Services"],
     "phone": "(800) 775-9011",
     "address": "1622 S 8th St, Rogers, AR 72756",
     "website": "https://nwaws.org/",
@@ -370,7 +370,7 @@
   },
   {
     "name": "Peace at Home Women's Shelter",
-    "categories": ["Emergency Shelters"],
+    "categories": ["Emergency Shelters", "Important Contacts", "Mental Health", "Social Services"],
     "phone": "(479) 442-9811",
     "address": "",
     "website": "https://peaceathomeshelter.org/",
@@ -379,7 +379,7 @@
   },
   {
     "name": "Restoration Village—Rogers",
-    "categories": ["Emergency Shelters"],
+    "categories": ["Emergency Shelters", "Transitional Living", "Mental Health"],
     "phone": "(479) 631-7345",
     "address": "2215 Little Flock Drive, Rogers, AR, 72756",
     "website": "https://www.homelessshelterdirectory.org/shelter/ar_restoration-village",
@@ -397,7 +397,7 @@
   },
   {
     "name": "Souls Harbor — Rogers",
-    "categories": ["Emergency Shelters"],
+    "categories": ["Emergency Shelters", "Transitional Living", "Mental Health"],
     "phone": "(479) 480-4519",
     "address": "1206 N 2nd St, Rogers, AR 72756",
     "website": "https://www.facebook.com/soulsharbornwa/",
@@ -406,7 +406,7 @@
   },
   {
     "name": "7Hills Day Center",
-    "categories": ["Food Pantries & Meals", "Clothing and household items", "Mental Health", "Important Contacts"],
+    "categories": ["Food Pantries & Meals", "Clothing and household items", "Hygiene Products", "Mental Health", "Important Contacts", "Social Services"],
     "phone": "(479) 966-4378",
     "address": "1832 S School Ave, Fayetteville, AR 72701",
     "website": "https://www.7hillscenter.org/day-center",
@@ -415,7 +415,7 @@
   },
   {
     "name": "7Hills Shelter",
-    "categories": ["Food Pantries & Meals", "Clothing and household items", "Mental Health", "Important Contacts", "Laundry Assistance", "Emergency Shelters"],
+    "categories": ["Food Pantries & Meals", "Clothing and household items", "Hygiene Products", "Mental Health", "Important Contacts", "Laundry Assistance", "Emergency Shelters", "Social Services"],
     "phone": "(479) 966-4378",
     "address": "915 S Seven Hills Ct, Fayetteville, AR 72701",
     "website": "https://www.7hillscenter.org/shelter",
@@ -433,7 +433,7 @@
   },
   {
     "name": "Hark NWA",
-    "categories": ["Housing Assistance"],
+    "categories": ["Housing Assistance", "Financial Assistance", "Social Services", "Important Contacts"],
     "phone": "211",
     "address": "",
     "website": "https://www.harknwa.com",
@@ -442,7 +442,7 @@
   },
   {
     "name": "Peace at Home Family Shelter",
-    "categories": ["Housing Assistance", "Emergency Shelters"],
+    "categories": ["Housing Assistance", "Emergency Shelters", "Mental Health", "Important Contacts", "Social Services"],
     "phone": "1 (877) 442-9811",
     "address": "",
     "website": "https://peaceathomeshelter.org/programs-services/",
@@ -464,12 +464,12 @@
     "phone": "(479) 524-8117",
     "address": "1255 W Tulsa St, Siloam Springs, AR 72761",
     "website": "https://www.siloamspringshousing.org/o/ssha/page/home/",
-    "email": "(479) 524-8117",
+    "email": "",
     "notes": "Section 8 Housing"
   },
   {
     "name": "ARcare Bentonville Medical",
-    "categories": ["Medical & Dental"],
+    "categories": ["Medical & Dental", "Mental Health"],
     "phone": "(479) 271-7634",
     "address": "2805 SE Midcities Dr, Bentonville, AR 72712",
     "website": "https://www.arcare.net/locations/bentonville-medical/",
@@ -487,7 +487,7 @@
   },
   {
     "name": "Benton County Health Department — Rogers",
-    "categories": ["Medical & Dental"],
+    "categories": ["Medical & Dental", "Social Services"],
     "phone": "(479) 986-1300",
     "address": " 1200 W Walnut St, Suite 2200, Rogers, AR 72756",
     "website": "https://healthy.arkansas.gov/breastcare-provider/benton-county-lhu-rogers-rogers/",
@@ -496,7 +496,7 @@
   },
   {
     "name": "Community Clinic NWA — Rogers",
-    "categories": ["Medical & Dental"],
+    "categories": ["Medical & Dental", "Mental Health"],
     "phone": "(855) 438-2280",
     "address": "1233 W. Poplar St, Rogers, AR 72756",
     "website": "https://communityclinic.net/location/primary-specialty-care-rogers-ar-poplar-st/",
@@ -505,7 +505,7 @@
   },
   {
     "name": "DDS/TEFRA Application Assistance",
-    "categories": ["Medical & Dental"],
+    "categories": ["Medical & Dental", "Social Services"],
     "phone": "(870) 423-3351",
     "address": "",
     "website": "https://humanservices.arkansas.gov/divisions-shared-services/medical-services/healthcare-programs/tefra/",
@@ -514,7 +514,7 @@
   },
   {
     "name": "Loving Choices Pregnancy Center - Rogers",
-    "categories": ["Medical & Dental"],
+    "categories": ["Medical & Dental", "Clothing and household items", "Hygiene Products", "Social Services"],
     "phone": "(479) 631-5951",
     "address": "3610 W Southern Hills Blvd, Suite B, Rogers, AR 72758",
     "website": "https://lovingchoices.org/",
@@ -523,7 +523,7 @@
   },
   {
     "name": "Loving Choices Pregnancy Center - Fayetteville",
-    "categories": ["Medical & Dental"],
+    "categories": ["Medical & Dental", "Clothing and household items", "Hygiene Products", "Social Services"],
     "phone": "(479) 521-6655",
     "address": "275 South Duncan, Suite B, Fayetteville, AR 72701",
     "website": "https://lovingchoices.org/",
@@ -532,7 +532,7 @@
   },
   {
     "name": "Loving Choices Pregnancy Center - Springdale",
-    "categories": ["Medical & Dental"],
+    "categories": ["Medical & Dental", "Clothing and household items", "Hygiene Products", "Social Services"],
     "phone": "(479) 487-2455",
     "address": "1479 Executive Place, Suite A, Springdale, AR",
     "website": "https://lovingchoices.org/",
@@ -550,7 +550,7 @@
   },
   {
     "name": "Laundry Love - Rogers",
-    "categories": ["Laundry Assistance"],
+    "categories": ["Laundry Assistance", "Food Pantries & Meals"],
     "phone": "(479) 466-4197",
     "address": "400 N 8th St, Rogers, AR 72756",
     "website": "https://laundrylove.org/find-a-location/?location=coin-laundry-rogers-ar",
@@ -568,7 +568,7 @@
   },
   {
     "name": "Essentials Outreach - Gravette",
-    "categories": ["Hygene Products"],
+    "categories": ["Hygiene Products", "Laundry Assistance"],
     "phone": "",
     "address": "1870 Limekiln Rd, Gravette, AR 72736-9363",
     "website": "https://www.essentialsoutreach.org/what-we-do",
@@ -577,7 +577,7 @@
   },
   {
     "name": "Essentials Outreach - Lincoln",
-    "categories": ["Hygene Products"],
+    "categories": ["Hygiene Products", "Laundry Assistance"],
     "phone": "",
     "address": "107 E School St, Lincoln, AR  72744-8841",
     "website": "https://www.essentialsoutreach.org/what-we-do",
@@ -586,7 +586,7 @@
   },
   {
     "name": "Essentials Outreach - Greenland",
-    "categories": ["Hygene Products"],
+    "categories": ["Hygiene Products", "Laundry Assistance"],
     "phone": "",
     "address": "55 N Sandy Ave, Greenland, AR 72737",
     "website": "https://www.essentialsoutreach.org/what-we-do",
@@ -595,7 +595,7 @@
   },
   {
     "name": "Essentials Outreach - Decatur",
-    "categories": ["Hygene Products"],
+    "categories": ["Hygiene Products", "Laundry Assistance"],
     "phone": "",
     "address": "1498 Stadium Ave., Decatur, AR 72722",
     "website": "https://www.essentialsoutreach.org/what-we-do",
