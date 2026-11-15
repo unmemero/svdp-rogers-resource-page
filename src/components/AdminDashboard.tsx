@@ -885,7 +885,20 @@ export function AdminDashboard() {
                       <dt className="inline font-semibold text-slate-900">
                         Address:{' '}
                       </dt>
-                      <dd className="inline">{item.address || '—'}</dd>
+                      <dd className="inline">
+                        {item.address ? (
+                          <a
+                            href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(item.address)}`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="font-medium text-sky-700 underline underline-offset-2 hover:text-sky-900"
+                          >
+                            {item.address}
+                          </a>
+                        ) : (
+                          '—'
+                        )}
+                      </dd>
                     </div>
                     <div>
                       <dt className="inline font-semibold text-slate-900">

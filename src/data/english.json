@@ -405,11 +405,20 @@
     "notes": ""
   },
   {
-    "name": "7Hills Homeless Center — Fayetteville",
-    "categories": ["Emergency Shelters"],
+    "name": "7Hills Day Center",
+    "categories": ["Food Pantries & Meals", "Clothing and household items", "Mental Health", "Important Contacts"],
     "phone": "(479) 966-4378",
-    "address": "",
-    "website": "",
+    "address": "1832 S School Ave, Fayetteville, AR 72701",
+    "website": "https://www.7hillscenter.org/day-center",
+    "email": "",
+    "notes": ""
+  },
+  {
+    "name": "7Hills Shelter",
+    "categories": ["Food Pantries & Meals", "Clothing and household items", "Mental Health", "Important Contacts", "Laundry Assistance", "Emergency Shelters"],
+    "phone": "(479) 966-4378",
+    "address": "915 S Seven Hills Ct, Fayetteville, AR 72701",
+    "website": "https://www.7hillscenter.org/shelter",
     "email": "",
     "notes": ""
   },
@@ -417,15 +426,15 @@
     "name": "Community Development Center",
     "categories": ["Housing Assistance"],
     "phone": "(479) 273-7344",
-    "address": "",
-    "website": "",
+    "address": "808 N Main St #1, Bentonville, AR 72712",
+    "website": "https://www.cd-nwa.com/",
     "email": "",
     "notes": ""
   },
   {
     "name": "Hark NWA",
     "categories": ["Housing Assistance"],
-    "phone": "",
+    "phone": "211",
     "address": "",
     "website": "https://www.harknwa.com",
     "email": "",

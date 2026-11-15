@@ -10,6 +10,10 @@ function formatPhoneHref(phone: string): string {
   return `tel:${digits}`
 }
 
+function formatMapsHref(address: string): string {
+  return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}`
+}
+
 export function ResourceCard({ resource, t }: ResourceCardProps) {
   return (
     <article className="resource-card flex flex-col justify-between gap-4 rounded-xl border border-slate-300 bg-white p-5 shadow-sm transition hover:border-sky-700/60 hover:shadow-md">
@@ -57,7 +61,16 @@ export function ResourceCard({ resource, t }: ResourceCardProps) {
             <dt className="font-semibold text-slate-700 shrink-0">
               {t.addressLabel}:
             </dt>
-            <dd className="min-w-0 text-slate-800">{resource.address}</dd>
+            <dd className="min-w-0">
+              <a
+                href={formatMapsHref(resource.address)}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-semibold text-sky-800 underline decoration-2 underline-offset-2 hover:text-sky-950 focus-visible:outline-3 focus-visible:outline-offset-2 focus-visible:outline-sky-700"
+              >
+                {resource.address}
+              </a>
+            </dd>
           </div>
         )}
 
