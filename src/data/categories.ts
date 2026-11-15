@@ -93,7 +93,6 @@ export const TRANSLATIONS: Record<Language, Translations> = {
     pageOf: (current, total) => `Page ${current} of ${total}`,
     previousPage: 'Previous',
     nextPage: 'Next',
-    feedbackButton: 'Send Feedback',
     feedbackSubject: 'SVdP Rogers Resource Page Feedback',
     languageToggleLabel: 'Español',
     disclaimerAccuracy:
@@ -124,7 +123,6 @@ export const TRANSLATIONS: Record<Language, Translations> = {
     pageOf: (current, total) => `Página ${current} de ${total}`,
     previousPage: 'Anterior',
     nextPage: 'Siguiente',
-    feedbackButton: 'Enviar Comentarios',
     feedbackSubject: 'Comentarios sobre la página de recursos de SVdP Rogers',
     languageToggleLabel: 'English',
     disclaimerAccuracy:

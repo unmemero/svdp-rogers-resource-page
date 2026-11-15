@@ -32,7 +32,7 @@ export function Header({ language, t, onToggleLanguage }: HeaderProps) {
             label={t.languageToggleLabel}
             onToggle={onToggleLanguage}
           />
-          <FeedbackButton label={t.feedbackButton} subject={t.feedbackSubject} />
+          <FeedbackButton subject={t.feedbackSubject} />
         </div>
       </div>
     </header>

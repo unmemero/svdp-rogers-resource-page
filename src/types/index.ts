@@ -40,7 +40,6 @@ export interface Translations {
   pageOf: (current: number, total: number) => string
   previousPage: string
   nextPage: string
-  feedbackButton: string
   feedbackSubject: string
   languageToggleLabel: string
   disclaimerAccuracy: string

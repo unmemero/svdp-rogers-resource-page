@@ -1,5 +1,14 @@
 [
   {
+    "name": "Sociedad de San Vicente de Paúl - Rogers (Society of Saint Vincent de Paul - Rogers)",
+    "categories": ["Asistencia Financiera"],
+    "phone": "(479) 616-1242",
+    "address": "",
+    "website": "https://www.svdprelief.org/",
+    "email": "",
+    "notes": ""
+  },
+  {
     "name": "Despensa Escolar de Bentonville (Bentonville Schoolhouse Pantry)",
     "categories": ["Despensas de Alimentos y Comidas"],
     "phone": "",
@@ -108,6 +117,15 @@
     "notes": ""
   },
   {
+    "name": "Conferencia Benevolente St. Stephen (St. Stephen Benevolent Conference)",
+    "categories": ["Asistencia Financiera"],
+    "phone": "(479) 696-9361",
+    "address": "1300 NE J St, Bentonville, AR 72712",
+    "website": "https://ststephenbentonville.com/ourparish/ssbc/",
+    "email": "",
+    "notes": ""
+  },
+  {
     "name": "Samaritan Community Center — Springdale",
     "categories": ["Despensas de Alimentos y Comidas"],
     "phone": "(479) 872-1115",
@@ -120,7 +138,7 @@
     "name": "Samaritan Community Center — Rogers",
     "categories": ["Despensas de Alimentos y Comidas"],
     "phone": "(479) 636-4198",
-    "address": "2910 S. 8th St., Rogers, AR 72758",
+    "address": "2910 S. 8th St, Rogers, AR 72758",
     "website": "https://www.samcc.org/",
     "email": "",
     "notes": ""
@@ -173,54 +191,81 @@
   {
     "name": "Second Street Pantry",
     "categories": ["Despensas de Alimentos y Comidas"],
-    "phone": "(479) 273-9210",
-    "address": "",
-    "website": "",
-    "email": "",
+    "phone": "(479) 273-2712",
+    "address": "201 NW 2nd Street, Bentonville, AR 72712",
+    "website": "https://2ndstpantry.org/",
+    "email": "2ndstreetpantry@gmail.com",
     "notes": ""
   },
   {
     "name": "Iglesia Católica St. Stephen (St. Stephen Catholic Church)",
     "categories": ["Despensas de Alimentos y Comidas"],
-    "phone": "(479) 696-9361",
-    "address": "",
-    "website": "",
-    "email": "",
+    "phone": "(479) 273-1240",
+    "address": "1300 NE J St Trail, Bentonville, AR 72712",
+    "website": "https://ststephenbentonville.com/",
+    "email": "ststephen@ststephenbentonville.com",
     "notes": ""
   },
   {
-    "name": "For the Love NWA",
+    "name": "For the Love NWA - Bentonville",
     "categories": ["Despensas de Alimentos y Comidas"],
     "phone": "",
     "address": "306 SW A. Street, Bentonville, AR 72712",
-    "website": "",
+    "website": "https://www.forthelovenwa.com/",
     "email": "",
     "notes": "Jueves de 5:30 a 6:30 PM"
   },
   {
-    "name": "Table 7 three",
+    "name": "For the Love NWA - Rogers",
     "categories": ["Despensas de Alimentos y Comidas"],
     "phone": "",
-    "address": "3801 SW Eden Brook Street, Bentonville, AR 72712",
-    "website": "",
+    "address": "203 S Promenade Blvd, Rogers, AR, 72758",
+    "website": "https://www.forthelovenwa.com/",
     "email": "",
-    "notes": "3er sábado a la 1:00 PM"
+    "notes": "Martes de 5:30 a 6:30 PM"
+  },
+  {
+    "name": "For the Love NWA - Springdale",
+    "categories": ["Despensas de Alimentos y Comidas"],
+    "phone": "",
+    "address": "922 E Emma Ave, Springdale, AR 72764",
+    "website": "https://www.forthelovenwa.com/",
+    "email": "",
+    "notes": "Lunes de 5:30 a 6:30 PM"
+  },
+  {
+    "name": "For the Love NWA - Fayetteville",
+    "categories": ["Despensas de Alimentos y Comidas"],
+    "phone": "",
+    "address": "612 S College Ave, Fayetteville, AR 72701",
+    "website": "https://www.forthelovenwa.com/",
+    "email": "",
+    "notes": "Miércoles de 5:30 a 6:30 PM"
+  },
+  {
+    "name": "Table 7 three",
+    "categories": ["Despensas de Alimentos y Comidas"],
+    "phone": "(479) 287-7927",
+    "address": "2863 Old Missouri Road, Fayetteville, Arkansas, 72703-3777",
+    "website": "https://www.table7three.com/",
+    "email": "table7three@yahoo.com",
+    "notes": ""
   },
   {
     "name": "To The Table NWA",
     "categories": ["Despensas de Alimentos y Comidas"],
-    "phone": "",
+    "phone": "(479) 224-9613",
     "address": "",
-    "website": "https://www.facebook.com/tttoutreach",
-    "email": "",
+    "website": "https://docs.google.com/forms/d/e/1FAIpQLSeuQRY9Nf7qzLpa3XoojqsKfrdgiatPRNVsFfKcu_MDsjKNkQ/viewform?pli=1",
+    "email": "tothetablenwa@gmail.com",
     "notes": "Debe ordenar en línea por Facebook antes del lunes; la entrega es el miércoles de 5:00 PM a 7:00 PM."
   },
   {
     "name": "Banco de Alimentos de NWA (NWA Food Bank)",
     "categories": ["Despensas de Alimentos y Comidas"],
     "phone": "(479) 872-8774",
-    "address": "",
-    "website": "https://www.nwafoodbank.org",
+    "address": "1604 Honeysuckle Street, Lowell AR 72745",
+    "website": "https://www.nwafoodbank.org/",
     "email": "",
     "notes": "Consulte el calendario en el sitio web para la entrega"
   },
@@ -228,8 +273,8 @@
     "name": "Departamento de Servicios Humanos del Condado de Benton (Benton County DHS)",
     "categories": ["Asistencia Financiera"],
     "phone": "(479) 273-9011",
-    "address": "",
-    "website": "",
+    "address": "900 SE 13th Court, Bentonville, AR 72712-5998",
+    "website": "https://humanservices.arkansas.gov/",
     "email": "",
     "notes": ""
   },
@@ -238,16 +283,61 @@
     "categories": ["Asistencia Financiera"],
     "phone": "(866) 489-6983",
     "address": "",
-    "website": "",
+    "website": "https://www.blackhillsenergy.com/community/black-hills-cares",
     "email": "",
     "notes": ""
   },
   {
-    "name": "Salvation Army (Asistencia Financiera, Alimentos y Ropa)",
-    "categories": ["Asistencia Financiera", "Despensas de Alimentos y Comidas", "Ropa y artículos del hogar"],
-    "phone": "(479) 636-6850",
-    "address": "",
-    "website": "",
+    "name": "Salvation Army - Rogers",
+    "categories": ["Asistencia Financiera", "Despensas de Alimentos y Comidas", "Salud Mental"],
+    "phone": "(479) 636-6805",
+    "address": "504 N Dixieland Rd, ROGERS, Arkansas 72756",
+    "website": "https://www.salvationarmyusa.org/ar/rogers/",
+    "email": "",
+    "notes": ""
+  },
+  {
+    "name": "Salvation Army - Bentonville",
+    "categories": ["Refugios de Emergencia", "Salud Mental", "Despensas de Alimentos y Comidas"],
+    "phone": "(479) 271-9545",
+    "address": "3305 SW I St, Bentonville, Arkansas 72712",
+    "website": "https://www.salvationarmyusa.org/ar/bentonville/sw-i-st/",
+    "email": "",
+    "notes": ""
+  },
+  {
+    "name": "Salvation Army - Springdale Corps",
+    "categories": ["Asistencia Financiera", "Despensas de Alimentos y Comidas", "Ropa y artículos del hogar", "Salud Mental"],
+    "phone": "(479) 751-7352",
+    "address": "315 Holcomb St, Springdale, AR, 72764",
+    "website": "https://satruck.org/",
+    "email": "",
+    "notes": ""
+  },
+  {
+    "name": "Salvation Army - Springdale Thrift Store",
+    "categories": ["Ropa y artículos del hogar"],
+    "phone": "(479) 756-3454",
+    "address": "329 Holcomb St, Springdale, AR, 72764",
+    "website": "https://www.salvationarmyusa.org/ar/rogers/",
+    "email": "",
+    "notes": ""
+  },
+  {
+    "name": "Salvation Army - Fayetteville",
+    "categories": ["Asistencia Financiera", "Despensas de Alimentos y Comidas", "Ropa y artículos del hogar", "Salud Mental"],
+    "phone": "(479) 521-2151",
+    "address": "219 W 15th St, Fayetteville, AR, 72701",
+    "website": "http://www.nwasalvationarmy.org/",
+    "email": "",
+    "notes": ""
+  },
+  {
+    "name": "Salvation Army - Area Command",
+    "categories": ["Asistencia Financiera", "Despensas de Alimentos y Comidas", "Ropa y artículos del hogar", "Salud Mental", "Refugios de Emergencia"],
+    "phone": "(479) 521-2151",
+    "address": "219 W 15th St, Fayetteville, AR, 72701",
+    "website": "https://www.salvationarmyusa.org/usa-southern-territory/arkansas-and-oklahoma/northwest-arkansas-area-command/",
     "email": "",
     "notes": ""
   },
@@ -255,36 +345,27 @@
     "name": "Our Healthy Communities—Rogers",
     "categories": ["Asistencia Financiera"],
     "phone": "(479) 636-7301",
-    "address": "",
-    "website": "",
-    "email": "",
-    "notes": ""
-  },
-  {
-    "name": "Fondo Benevolente St. Stephen (St. Stephen Benevolent Fund)",
-    "categories": ["Asistencia Financiera"],
-    "phone": "(479) 696-9361",
-    "address": "",
-    "website": "",
-    "email": "",
+    "address": "506 East Spruce St, Rogers, AR 72756",
+    "website": "https://www.ohcnwa.org/",
+    "email": "info@ohcnwa.org",
     "notes": ""
   },
   {
     "name": "Havenwood",
     "categories": ["Refugios de Emergencia", "Vivienda de Transición"],
     "phone": "(479) 273-1060",
-    "address": "",
-    "website": "",
-    "email": "",
+    "address": "808 N. Main, Bentonville, Arkansas 72712",
+    "website": "https://www.nwahavenwood.org/",
+    "email": "info@nwahavenwood.org",
     "notes": ""
   },
   {
     "name": "Refugio de Mujeres de NWA—Rogers (NWA Women's Shelter)",
     "categories": ["Refugios de Emergencia"],
     "phone": "(800) 775-9011",
-    "address": "",
-    "website": "",
-    "email": "",
+    "address": "1622 S 8th St, Rogers, AR 72756",
+    "website": "https://nwaws.org/",
+    "email": "info@nwaws.org",
     "notes": ""
   },
   {
@@ -292,48 +373,39 @@
     "categories": ["Refugios de Emergencia"],
     "phone": "(479) 442-9811",
     "address": "",
-    "website": "",
-    "email": "",
+    "website": "https://peaceathomeshelter.org/",
+    "email": "help@peaceathomeshelter.com",
     "notes": ""
   },
   {
     "name": "Restoration Village—Rogers",
     "categories": ["Refugios de Emergencia"],
     "phone": "(479) 631-7345",
-    "address": "",
-    "website": "",
-    "email": "",
+    "address": "2215 Little Flock Drive, Rogers, AR, 72756",
+    "website": "https://www.homelessshelterdirectory.org/shelter/ar_restoration-village",
+    "email": "info@restorationvillage.net",
     "notes": ""
   },
   {
-    "name": "Saving Grace—Rogers",
-    "categories": ["Refugios de Emergencia", "Vivienda de transición"],
+    "name": "Saving Grace — Rogers",
+    "categories": ["Refugios de Emergencia", "Vivienda de Transición"],
     "phone": "(479) 636-1133",
-    "address": "",
-    "website": "",
+    "address": "12161 Hwy 72 West, Bentonville, AR 72712",
+    "website": "https://www.savinggracenwa.org/",
     "email": "",
     "notes": ""
   },
   {
-    "name": "Souls Harbor—Rogers",
+    "name": "Souls Harbor — Rogers",
     "categories": ["Refugios de Emergencia"],
-    "phone": "(479) 631-7878",
-    "address": "",
-    "website": "",
-    "email": "",
+    "phone": "(479) 480-4519",
+    "address": "1206 N 2nd St, Rogers, AR 72756",
+    "website": "https://www.facebook.com/soulsharbornwa/",
+    "email": "josh@mybridgeforhope.org",
     "notes": ""
   },
   {
-    "name": "The Salvation Army (Refugio de Emergencia)",
-    "categories": ["Refugios de Emergencia"],
-    "phone": "(479) 271-9545",
-    "address": "",
-    "website": "",
-    "email": "",
-    "notes": ""
-  },
-  {
-    "name": "7Hills Homeless Center—Fayetteville",
+    "name": "7Hills Homeless Center — Fayetteville",
     "categories": ["Refugios de Emergencia"],
     "phone": "(479) 966-4378",
     "address": "",

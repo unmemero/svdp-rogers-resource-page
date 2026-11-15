@@ -1,5 +1,14 @@
 [
   {
+    "name": "Society of Saint Vincent de Paul - Rogers",
+    "categories": ["Financial Assistance"],
+    "phone": "(479) 616-1242",
+    "address": "",
+    "website": "https://www.svdprelief.org/",
+    "email": "",
+    "notes": ""
+  },
+  {
     "name": "Bentonville Schoolhouse Pantry",
     "categories": ["Food Pantries & Meals"],
     "phone": "",
@@ -336,7 +345,7 @@
     "name": "Our Healthy Communities—Rogers",
     "categories": ["Financial Assistance"],
     "phone": "(479) 636-7301",
-    "address": "506 East Spruce St, Rogers, AR 7275",
+    "address": "506 East Spruce St, Rogers, AR 72756",
     "website": "https://www.ohcnwa.org/",
     "email": "info@ohcnwa.org",
     "notes": ""
@@ -364,48 +373,39 @@
     "categories": ["Emergency Shelters"],
     "phone": "(479) 442-9811",
     "address": "",
-    "website": "",
-    "email": "",
+    "website": "https://peaceathomeshelter.org/",
+    "email": "help@peaceathomeshelter.com",
     "notes": ""
   },
   {
     "name": "Restoration Village—Rogers",
     "categories": ["Emergency Shelters"],
     "phone": "(479) 631-7345",
-    "address": "",
-    "website": "",
-    "email": "",
+    "address": "2215 Little Flock Drive, Rogers, AR, 72756",
+    "website": "https://www.homelessshelterdirectory.org/shelter/ar_restoration-village",
+    "email": "info@restorationvillage.net",
     "notes": ""
   },
   {
-    "name": "Saving Grace—Rogers",
-    "categories": ["Emergency Shelters", "Transitional living"],
+    "name": "Saving Grace — Rogers",
+    "categories": ["Emergency Shelters", "Transitional Living"],
     "phone": "(479) 636-1133",
-    "address": "",
-    "website": "",
+    "address": "12161 Hwy 72 West, Bentonville, AR 72712",
+    "website": "https://www.savinggracenwa.org/",
     "email": "",
     "notes": ""
   },
   {
-    "name": "Souls Harbor—Rogers",
+    "name": "Souls Harbor — Rogers",
     "categories": ["Emergency Shelters"],
-    "phone": "(479) 631-7878",
-    "address": "",
-    "website": "",
-    "email": "",
+    "phone": "(479) 480-4519",
+    "address": "1206 N 2nd St, Rogers, AR 72756",
+    "website": "https://www.facebook.com/soulsharbornwa/",
+    "email": "josh@mybridgeforhope.org",
     "notes": ""
   },
   {
-    "name": "The Salvation Army (Emergency Shelter)",
-    "categories": ["Emergency Shelters"],
-    "phone": "(479) 271-9545",
-    "address": "",
-    "website": "",
-    "email": "",
-    "notes": ""
-  },
-  {
-    "name": "7Hills Homeless Center—Fayetteville",
+    "name": "7Hills Homeless Center — Fayetteville",
     "categories": ["Emergency Shelters"],
     "phone": "(479) 966-4378",
     "address": "",
