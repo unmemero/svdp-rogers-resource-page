@@ -1,5 +1,6 @@
 import { useMemo } from 'react'
-import type { Resource, SearchNotice } from '../types'
+import { CATEGORY_SYNONYMS, STOPWORDS } from '../data/categories'
+import type { Language, Resource, SearchNotice } from '../types'
 
 function normalizeText(value: string): string {
   return value
@@ -9,25 +10,71 @@ function normalizeText(value: string): string {
     .trim()
 }
 
-export function useSearch(resources: Resource[], query: string): Resource[] {
+export function useSearch(
+  resources: Resource[],
+  query: string,
+  language: Language = 'en',
+  selectedCategory: string | null = null,
+): Resource[] {
   return useMemo(() => {
+    // 1. Filter by category if selected
+    const categoryFiltered = selectedCategory
+      ? resources.filter((resource) =>
+          resource.categories.includes(selectedCategory),
+        )
+      : resources
+
     const normalizedQuery = normalizeText(query)
     if (!normalizedQuery) {
-      return resources
+      return categoryFiltered
     }
 
-    const terms = normalizedQuery.split(/\s+/).filter(Boolean)
+    const rawTerms = normalizedQuery.split(/\s+/).filter(Boolean)
+    const stopwords = STOPWORDS[language] || new Set<string>()
+    const meaningfulTerms = rawTerms.filter((term) => !stopwords.has(term))
+    const searchTerms = meaningfulTerms.length > 0 ? meaningfulTerms : rawTerms
 
-    return resources.filter((resource) => {
+    const synonymsMap = CATEGORY_SYNONYMS[language] || {}
+
+    // Precompute enriched searchable text for each candidate resource
+    const enrichedResources = categoryFiltered.map((resource) => {
       const nameNorm = normalizeText(resource.name)
       const categoriesNorm = resource.categories.map(normalizeText).join(' ')
       const addressNorm = normalizeText(resource.address || '')
       const notesNorm = normalizeText(resource.notes || '')
-      const searchableText = `${nameNorm} ${categoriesNorm} ${addressNorm} ${notesNorm}`
 
-      return terms.every((term) => searchableText.includes(term))
+      const extraSynonyms = resource.categories
+        .flatMap((cat) => synonymsMap[cat] || [])
+        .map(normalizeText)
+        .join(' ')
+
+      const searchableText = `${nameNorm} ${categoriesNorm} ${addressNorm} ${notesNorm} ${extraSynonyms}`
+      return { resource, searchableText }
     })
-  }, [resources, query])
+
+    // Try matching all terms (AND query)
+    const fullMatches = enrichedResources.filter(({ searchableText }) =>
+      searchTerms.every((term) => searchableText.includes(term)),
+    )
+
+    if (fullMatches.length > 0 || searchTerms.length <= 1) {
+      return fullMatches.map(({ resource }) => resource)
+    }
+
+    // Fall back to matching any term (OR query) sorted by match count
+    const partialMatches = enrichedResources
+      .map(({ resource, searchableText }) => {
+        const matchCount = searchTerms.reduce(
+          (count, term) => (searchableText.includes(term) ? count + 1 : count),
+          0,
+        )
+        return { resource, matchCount }
+      })
+      .filter(({ matchCount }) => matchCount > 0)
+      .sort((a, b) => b.matchCount - a.matchCount)
+
+    return partialMatches.map(({ resource }) => resource)
+  }, [resources, query, language, selectedCategory])
 }
 
 export function useSearchNotices(

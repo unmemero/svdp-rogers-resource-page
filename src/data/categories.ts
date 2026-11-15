@@ -35,6 +35,121 @@ export const CATEGORIES = {
   ],
 } as const
 
+export const CATEGORY_ICONS: Record<number, string> = {
+  0: 'restaurant',            // Food Pantries & Meals
+  1: 'payments',              // Financial Assistance
+  2: 'night_shelter',         // Emergency Shelters
+  3: 'holiday_village',       // Transitional Living
+  4: 'home',                  // Housing Assistance
+  5: 'checkroom',             // Clothing and household items
+  6: 'medical_services',      // Medical & Dental
+  7: 'local_laundry_service', // Laundry Assistance
+  8: 'psychology',            // Mental Health
+  9: 'contact_phone',         // Important Contacts
+  10: 'clean_hands',          // Hygiene Products
+  11: 'groups',               // Social Services
+}
+
+export const CATEGORY_SYNONYMS: Record<Language, Record<string, string[]>> = {
+  en: {
+    'Food Pantries & Meals': [
+      'food', 'meals', 'meal', 'pantry', 'pantries', 'groceries', 'grocery',
+      'hungry', 'hunger', 'breakfast', 'lunch', 'dinner', 'food bank', 'food box', 'soup kitchen'
+    ],
+    'Financial Assistance': [
+      'rent', 'rental', 'utilities', 'utility', 'electric', 'electricity',
+      'water', 'gas', 'power', 'bills', 'bill', 'cash', 'money', 'financial aid', 'payments'
+    ],
+    'Emergency Shelters': [
+      'shelter', 'shelters', 'homeless', 'homelessness', 'eviction', 'emergency shelter', 'housing', 'unhoused'
+    ],
+    'Transitional Living': [
+      'transitional', 'halfway', 'housing', 'apartment', 'home', 'living'
+    ],
+    'Housing Assistance': [
+      'housing', 'section 8', 'rent', 'rental', 'apartment', 'home', 'eviction', 'landlord'
+    ],
+    'Clothing and household items': [
+      'clothing', 'clothes', 'shoes', 'coats', 'jackets', 'blankets', 'furniture', 'household', 'bedding', 'mattress'
+    ],
+    'Medical & Dental': [
+      'doctor', 'physician', 'clinic', 'dentist', 'dental', 'teeth', 'tooth',
+      'medicine', 'prescription', 'rx', 'pharmacy', 'hospital', 'health', 'pediatrician', 'checkup'
+    ],
+    'Laundry Assistance': [
+      'laundry', 'wash', 'washer', 'dryer', 'clean clothes'
+    ],
+    'Mental Health': [
+      'counseling', 'counselor', 'therapy', 'therapist', 'psychologist',
+      'depression', 'anxiety', 'stress', 'behavioral', 'mental health', 'emotional'
+    ],
+    'Important Contacts': [
+      'emergency', 'police', 'crisis', 'hotline', 'phone', 'contact'
+    ],
+    'Hygiene Products': [
+      'diapers', 'wipes', 'soap', 'shampoo', 'toilet paper', 'toothpaste', 'toothbrush', 'pads', 'tampons', 'hygiene', 'toiletries'
+    ],
+    'Social Services': [
+      'social services', 'case management', 'benefits', 'support', 'community'
+    ],
+  },
+  es: {
+    'Despensas de Alimentos y Comidas': [
+      'comida', 'alimentos', 'alimento', 'despensa', 'despensas', 'hambre',
+      'canasta', 'mandado', 'banco de alimentos', 'lonche', 'cena', 'almuerzo', 'desayuno', 'comedor'
+    ],
+    'Asistencia Financiera': [
+      'renta', 'alquiler', 'luz', 'electricidad', 'agua', 'gas', 'biles',
+      'bil', 'recibo', 'factura', 'pagar', 'dinero', 'pago', 'deuda', 'utilidades', 'servicios'
+    ],
+    'Refugios de Emergencia': [
+      'refugio', 'albergue', 'sin hogar', 'calle', 'techo', 'emergencia', 'dormir', 'desalojo'
+    ],
+    'Vivienda de Transición': [
+      'vivienda', 'transicion', 'cuarto', 'apartamento', 'departamento', 'casa', 'hogar'
+    ],
+    'Asistencia de Vivienda': [
+      'vivienda', 'seccion 8', 'casa', 'renta', 'apartamento', 'departamento', 'alquiler', 'desalojo', 'hogar'
+    ],
+    'Ropa y artículos del hogar': [
+      'ropa', 'vestir', 'zapatos', 'calzado', 'cobijas', 'frazadas', 'mantas',
+      'abrigos', 'chamarra', 'chamarras', 'chaqueta', 'muebles', 'cama', 'colchon'
+    ],
+    'Asistencia Médica y Dental': [
+      'doctor', 'doctora', 'medico', 'medica', 'clinica', 'dentista', 'dientes',
+      'muela', 'medicina', 'medicinas', 'pastillas', 'farmacia', 'salud', 'hospital', 'pediatra', 'enfermo', 'cita'
+    ],
+    'Asistencia de Lavandería': [
+      'lavar', 'lavanderia', 'lavadora', 'ropa sucia'
+    ],
+    'Salud Mental': [
+      'psicologo', 'psicologa', 'terapia', 'consejero', 'consejeria',
+      'depresion', 'ansiedad', 'estres', 'emocional', 'mente'
+    ],
+    'Contactos Importantes': [
+      'telefono', 'ayuda', 'emergencia', 'policia', 'linea'
+    ],
+    'Productos de Higiene': [
+      'panales', 'pañales', 'toallitas', 'jabon', 'shampoo', 'pasta de dientes',
+      'cepillo', 'toallas sanitarias', 'aseo', 'higiene', 'personal'
+    ],
+    'Servicios Sociales': [
+      'apoyo', 'social', 'tramites', 'comunidad', 'asistencia'
+    ],
+  },
+}
+
+export const STOPWORDS: Record<Language, Set<string>> = {
+  en: new Set([
+    'the', 'a', 'an', 'in', 'on', 'for', 'to', 'of', 'and', 'or', 'with',
+    'my', 'our', 'their', 'his', 'her', 'help', 'need', 'needing', 'where', 'is', 'are', 'some'
+  ]),
+  es: new Set([
+    'de', 'la', 'el', 'los', 'las', 'un', 'una', 'unos', 'unas', 'en', 'para',
+    'por', 'con', 'mis', 'mi', 'su', 'sus', 'y', 'o', 'al', 'del', 'ayuda', 'necesito', 'donde', 'hay', 'que', 'a'
+  ]),
+}
+
 export const SEARCH_NOTICES: Record<Language, SearchNotice[]> = {
   en: [
     {
@@ -99,6 +214,9 @@ export const TRANSLATIONS: Record<Language, Translations> = {
     nextPage: 'Next',
     feedbackSubject: 'SVdP Rogers Resource Page Feedback',
     languageToggleLabel: 'Español',
+    allCategoriesLabel: 'All Categories',
+    categoriesSectionLabel: 'Browse by category',
+    clearCategoryFilter: 'Clear category filter',
     disclaimerAccuracy:
       'We strive to maintain accurate information, but cannot guarantee it is always up to date. Please call ahead when possible.',
     footerAttribution: (lastUpdate) =>
@@ -129,6 +247,9 @@ export const TRANSLATIONS: Record<Language, Translations> = {
     nextPage: 'Siguiente',
     feedbackSubject: 'Comentarios sobre la página de recursos de SVdP Rogers',
     languageToggleLabel: 'English',
+    allCategoriesLabel: 'Todas las categorías',
+    categoriesSectionLabel: 'Explorar por categoría',
+    clearCategoryFilter: 'Borrar filtro de categoría',
     disclaimerAccuracy:
       'Nos esforzamos por mantener la información actualizada, pero no podemos garantizar su exactitud en todo momento. Por favor llame con anticipación cuando sea posible.',
     footerAttribution: (lastUpdate) =>
