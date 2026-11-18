@@ -44,4 +44,8 @@ export interface Translations {
   languageToggleLabel: string
   disclaimerAccuracy: string
   footerAttribution: (lastUpdate: string) => string
+  qrButtonLabel: string
+  qrModalTitle: string
+  qrModalDescription: string
+  qrCloseLabel: string
 }
