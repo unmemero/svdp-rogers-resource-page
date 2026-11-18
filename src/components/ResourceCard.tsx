@@ -3,6 +3,7 @@ import type { Resource, Translations } from '../types'
 interface ResourceCardProps {
   resource: Resource
   t: Translations
+  onSelectCategory?: (category: string) => void
 }
 
 function formatPhoneHref(phone: string): string {
@@ -10,7 +11,11 @@ function formatPhoneHref(phone: string): string {
   return `tel:${digits}`
 }
 
-export function ResourceCard({ resource, t }: ResourceCardProps) {
+function formatMapsHref(address: string): string {
+  return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}`
+}
+
+export function ResourceCard({ resource, t, onSelectCategory }: ResourceCardProps) {
   return (
     <article className="resource-card flex flex-col justify-between gap-4 rounded-xl border border-slate-300 bg-white p-5 shadow-sm transition hover:border-sky-700/60 hover:shadow-md">
       <header className="flex flex-col gap-2.5">
@@ -24,11 +29,20 @@ export function ResourceCard({ resource, t }: ResourceCardProps) {
             aria-label="Categories"
           >
             {resource.categories.map((category) => (
-              <li
-                key={category}
-                className="inline-flex items-center rounded-full border border-sky-200 bg-sky-50 px-3 py-1 text-xs font-semibold text-sky-900 sm:text-sm"
-              >
-                {category}
+              <li key={category}>
+                {onSelectCategory ? (
+                  <button
+                    type="button"
+                    onClick={() => onSelectCategory(category)}
+                    className="inline-flex items-center rounded-full border border-sky-200 bg-sky-50 px-3 py-1 text-xs font-semibold text-sky-900 transition hover:bg-sky-100 hover:border-sky-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-700 sm:text-sm"
+                  >
+                    {category}
+                  </button>
+                ) : (
+                  <span className="inline-flex items-center rounded-full border border-sky-200 bg-sky-50 px-3 py-1 text-xs font-semibold text-sky-900 sm:text-sm">
+                    {category}
+                  </span>
+                )}
               </li>
             ))}
           </ul>
@@ -57,7 +71,16 @@ export function ResourceCard({ resource, t }: ResourceCardProps) {
             <dt className="font-semibold text-slate-700 shrink-0">
               {t.addressLabel}:
             </dt>
-            <dd className="min-w-0 text-slate-800">{resource.address}</dd>
+            <dd className="min-w-0">
+              <a
+                href={formatMapsHref(resource.address)}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-semibold text-sky-800 underline decoration-2 underline-offset-2 hover:text-sky-950 focus-visible:outline-3 focus-visible:outline-offset-2 focus-visible:outline-sky-700"
+              >
+                {resource.address}
+              </a>
+            </dd>
           </div>
         )}
 

@@ -42,6 +42,9 @@ export interface Translations {
   nextPage: string
   feedbackSubject: string
   languageToggleLabel: string
+  allCategoriesLabel: string
+  categoriesSectionLabel: string
+  clearCategoryFilter: string
   disclaimerAccuracy: string
   footerAttribution: (lastUpdate: string) => string
   qrButtonLabel: string

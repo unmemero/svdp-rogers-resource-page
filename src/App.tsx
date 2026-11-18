@@ -1,9 +1,10 @@
 import { useEffect, useState } from 'react'
+import { CategoryFilter } from './components/CategoryFilter'
 import { Layout } from './components/Layout'
 import { Pagination } from './components/Pagination'
 import { ResourceCard } from './components/ResourceCard'
 import { SearchBar } from './components/SearchBar'
-import { SEARCH_NOTICES, TRANSLATIONS } from './data/categories'
+import { CATEGORIES, SEARCH_NOTICES, TRANSLATIONS } from './data/categories'
 import englishData from './data/english.json'
 import spanishData from './data/spanish.json'
 import { useSearch, useSearchNotices } from './hooks/useSearch'
@@ -14,15 +15,34 @@ const RESOURCES_BY_LANG: Record<Language, Resource[]> = {
   es: spanishData,
 }
 
+function getInitialLanguage(): Language {
+  if (typeof window === 'undefined') return 'en'
+  try {
+    const saved = localStorage.getItem('preferred_language')
+    if (saved === 'en' || saved === 'es') {
+      return saved
+    }
+    const browserLang =
+      navigator.languages && navigator.languages.length > 0
+        ? navigator.languages[0]
+        : navigator.language
+
+    return browserLang?.toLowerCase().startsWith('es') ? 'es' : 'en'
+  } catch {
+    return 'en'
+  }
+}
+
 export function App() {
-  const [language, setLanguage] = useState<Language>('en')
+  const [language, setLanguage] = useState<Language>(getInitialLanguage)
   const [query, setQuery] = useState('')
+  const [selectedCategory, setSelectedCategory] = useState<string | null>(null)
   const [pageSize, setPageSize] = useState<PageSize>(10)
   const [currentPage, setCurrentPage] = useState(1)
 
   const t = TRANSLATIONS[language]
   const allResources = RESOURCES_BY_LANG[language]
-  const filteredResources = useSearch(allResources, query)
+  const filteredResources = useSearch(allResources, query, language, selectedCategory)
   const activeNotices = useSearchNotices(SEARCH_NOTICES[language], query)
 
   const totalPages = Math.max(1, Math.ceil(filteredResources.length / pageSize))
@@ -39,12 +59,36 @@ export function App() {
   }, [language, t.siteTitle, t.siteSubtitle])
 
   const handleToggleLanguage = () => {
-    setLanguage((prev) => (prev === 'en' ? 'es' : 'en'))
+    const nextLang: Language = language === 'en' ? 'es' : 'en'
+    try {
+      localStorage.setItem('preferred_language', nextLang)
+    } catch {
+      // ignore
+    }
+
+    // Preserve corresponding category selection across language switch
+    setSelectedCategory((prev) => {
+      if (!prev) return null
+      const prevList = CATEGORIES[language]
+      const nextList = CATEGORIES[nextLang]
+      const index = (prevList as readonly string[]).indexOf(prev)
+      if (index !== -1 && index < nextList.length) {
+        return nextList[index]
+      }
+      return null
+    })
+
+    setLanguage(nextLang)
     setCurrentPage(1)
   }
 
   const handleQueryChange = (newQuery: string) => {
     setQuery(newQuery)
+    setCurrentPage(1)
+  }
+
+  const handleSelectCategory = (category: string | null) => {
+    setSelectedCategory(category)
     setCurrentPage(1)
   }
 
@@ -60,11 +104,20 @@ export function App() {
       onToggleLanguage={handleToggleLanguage}
     >
       <div className="flex flex-col gap-6">
-        <SearchBar
-          query={query}
-          onChange={handleQueryChange}
-          t={t}
-        />
+        <div className="flex flex-col gap-3">
+          <SearchBar
+            query={query}
+            onChange={handleQueryChange}
+            t={t}
+          />
+
+          <CategoryFilter
+            categories={CATEGORIES[language]}
+            selectedCategory={selectedCategory}
+            onSelectCategory={handleSelectCategory}
+            t={t}
+          />
+        </div>
 
         {activeNotices.length > 0 && (
           <div className="flex flex-col gap-3" role="region" aria-label="Special notices">
@@ -97,7 +150,11 @@ export function App() {
           >
             {paginatedResources.map((resource) => (
               <li key={resource.name} className="flex flex-col">
-                <ResourceCard resource={resource} t={t} />
+                <ResourceCard
+                  resource={resource}
+                  t={t}
+                  onSelectCategory={handleSelectCategory}
+                />
               </li>
             ))}
           </ul>
