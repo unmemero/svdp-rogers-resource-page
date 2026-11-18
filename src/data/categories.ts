@@ -222,9 +222,6 @@ export const TRANSLATIONS: Record<Language, Translations> = {
     footerAttribution: (lastUpdate) =>
       `Provided by the SVDP Mother Theresa Conference of Rogers, AR - ${lastUpdate}`,
     qrButtonLabel: 'QR Code',
-    qrModalTitle: 'Scan to Open Community Resources',
-    qrModalDescription:
-      'Point your phone camera at this QR code to open this page.',
     qrCloseLabel: 'Close',
   },
   es: {
@@ -260,9 +257,6 @@ export const TRANSLATIONS: Record<Language, Translations> = {
     footerAttribution: (lastUpdate) =>
       `Proporcionado por la Conferencia Madre Teresa de SVDP de Rogers, AR - ${lastUpdate}`,
     qrButtonLabel: 'Código QR',
-    qrModalTitle: 'Escanee para abrir los recursos',
-    qrModalDescription:
-      'Apunte la cámara de su teléfono a este código QR para abrir esta página.',
     qrCloseLabel: 'Cerrar',
   },
 }

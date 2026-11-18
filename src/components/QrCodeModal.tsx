@@ -1,4 +1,4 @@
-import { useEffect, useId, useRef } from 'react'
+import { useEffect, useRef } from 'react'
 import type { Translations } from '../types'
 
 interface QrCodeModalProps {
@@ -7,7 +7,6 @@ interface QrCodeModalProps {
 
 export function QrCodeModal({ t }: QrCodeModalProps) {
   const dialogRef = useRef<HTMLDialogElement>(null)
-  const titleId = useId()
   const qrSvgUrl = `${import.meta.env.BASE_URL}qr-code.svg`
 
   // Fallback for browsers without native <dialog closedby="any"> support
@@ -65,37 +64,42 @@ export function QrCodeModal({ t }: QrCodeModalProps) {
 
       <dialog
         ref={dialogRef}
-        aria-labelledby={titleId}
+        aria-label={t.qrButtonLabel}
         {...({ closedby: 'any' } as Record<string, string>)}
-        className="m-auto w-full max-w-sm rounded-2xl border border-slate-300 bg-white p-0 text-slate-900 shadow-2xl"
+        className="m-auto w-[calc(100vw-2rem)] max-w-md rounded-2xl border border-slate-300 bg-white p-0 text-slate-900 shadow-2xl"
       >
-        <div className="flex flex-col items-center gap-4 p-6 text-center">
-          <h2 id={titleId} className="text-lg font-bold text-slate-900 sm:text-xl">
-            {t.qrModalTitle}
-          </h2>
-
-          <p className="text-sm text-slate-600">{t.qrModalDescription}</p>
-
-          <img
-            src={qrSvgUrl}
-            alt="QR Code for SVdP Rogers Community Resources"
-            width={240}
-            height={240}
-            className="h-60 w-60 rounded-xl border border-slate-200 bg-white p-2 shadow-xs"
-          />
-
-          <form
-            method="dialog"
-            className="flex w-full items-center justify-center border-t border-slate-200 pt-4"
-          >
+        <div className="relative flex flex-col items-center justify-center p-4 pt-12 sm:p-6 sm:pt-14">
+          <form method="dialog" className="absolute top-3 right-3">
             <button
               type="submit"
               autoFocus
-              className="rounded-lg bg-sky-800 px-6 py-2.5 text-sm font-bold text-white transition hover:bg-sky-900 focus-visible:outline-3 focus-visible:outline-offset-2 focus-visible:outline-sky-700"
+              aria-label={t.qrCloseLabel}
+              className="icon-button inline-flex h-10 w-10 items-center justify-center rounded-full text-slate-600 transition hover:bg-slate-100 hover:text-slate-950 focus-visible:outline-3 focus-visible:outline-offset-2 focus-visible:outline-sky-700"
             >
-              {t.qrCloseLabel}
+              <svg
+                aria-hidden="true"
+                className="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth={2.5}
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
             </button>
           </form>
+
+          <img
+            src={qrSvgUrl}
+            alt={t.qrButtonLabel}
+            width={360}
+            height={360}
+            className="aspect-square w-full max-w-[340px] rounded-xl bg-white"
+          />
         </div>
       </dialog>
     </>
