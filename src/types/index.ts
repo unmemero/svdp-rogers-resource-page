@@ -47,4 +47,6 @@ export interface Translations {
   clearCategoryFilter: string
   disclaimerAccuracy: string
   footerAttribution: (lastUpdate: string) => string
+  qrButtonLabel: string
+  qrCloseLabel: string
 }

@@ -2,6 +2,7 @@ import type { ReactNode } from 'react'
 import { LAST_UPDATED, LAST_UPDATED_ES } from '../data/categories'
 import type { Language, Translations } from '../types'
 import { Header } from './Header'
+import { QrCodeModal } from './QrCodeModal'
 
 interface LayoutProps {
   language: Language
@@ -31,6 +32,7 @@ export function Layout({ language, t, onToggleLanguage, children }: LayoutProps)
           <p className="mt-2 border-t border-slate-200 pt-3 font-semibold text-slate-900">
             {t.footerAttribution(lastUpdate)}
           </p>
+          <QrCodeModal t={t} />
         </div>
       </footer>
     </div>

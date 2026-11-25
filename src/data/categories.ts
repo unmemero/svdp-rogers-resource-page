@@ -221,6 +221,8 @@ export const TRANSLATIONS: Record<Language, Translations> = {
       'We strive to maintain accurate information, but cannot guarantee it is always up to date. Please call ahead when possible.',
     footerAttribution: (lastUpdate) =>
       `Provided by the SVDP Mother Theresa Conference of Rogers, AR - ${lastUpdate}`,
+    qrButtonLabel: 'QR Code',
+    qrCloseLabel: 'Close',
   },
   es: {
     siteTitle: 'Sociedad de San Vicente de Paúl - Rogers, AR',
@@ -254,5 +256,7 @@ export const TRANSLATIONS: Record<Language, Translations> = {
       'Nos esforzamos por mantener la información actualizada, pero no podemos garantizar su exactitud en todo momento. Por favor llame con anticipación cuando sea posible.',
     footerAttribution: (lastUpdate) =>
       `Proporcionado por la Conferencia Madre Teresa de SVDP de Rogers, AR - ${lastUpdate}`,
+    qrButtonLabel: 'Código QR',
+    qrCloseLabel: 'Cerrar',
   },
 }
