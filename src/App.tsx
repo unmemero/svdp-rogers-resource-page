@@ -1,6 +1,7 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import { CategoryFilter } from './components/CategoryFilter'
 import { Layout } from './components/Layout'
+import { MaterialIcon } from './components/MaterialIcon'
 import { Pagination } from './components/Pagination'
 import { ResourceCard } from './components/ResourceCard'
 import { SearchBar } from './components/SearchBar'
@@ -9,6 +10,7 @@ import englishData from './data/english.json'
 import spanishData from './data/spanish.json'
 import { useSearch, useSearchNotices } from './hooks/useSearch'
 import type { Language, PageSize, Resource } from './types'
+import { exportResourcesToPdf } from './utils/exportPdf'
 
 const RESOURCES_BY_LANG: Record<Language, Resource[]> = {
   en: englishData,
@@ -39,11 +41,25 @@ export function App() {
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null)
   const [pageSize, setPageSize] = useState<PageSize>(10)
   const [currentPage, setCurrentPage] = useState(1)
+  const [isExportingPdf, setIsExportingPdf] = useState(false)
+  const filterSectionRef = useRef<HTMLDivElement>(null)
 
   const t = TRANSLATIONS[language]
   const allResources = RESOURCES_BY_LANG[language]
   const filteredResources = useSearch(allResources, query, language, selectedCategory)
   const activeNotices = useSearchNotices(SEARCH_NOTICES[language], query)
+
+  const categoryCounts = useMemo(() => {
+    const counts: Record<string, number> = {}
+    for (const resource of allResources) {
+      for (const cat of resource.categories) {
+        counts[cat] = (counts[cat] || 0) + 1
+      }
+    }
+    return counts
+  }, [allResources])
+
+  const isFiltered = Boolean(query.trim() || selectedCategory)
 
   const totalPages = Math.max(1, Math.ceil(filteredResources.length / pageSize))
   const safePage = Math.min(currentPage, totalPages)
@@ -92,6 +108,34 @@ export function App() {
     setCurrentPage(1)
   }
 
+  const handleCardTagClick = (category: string) => {
+    setSelectedCategory(category)
+    setCurrentPage(1)
+    filterSectionRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  }
+
+  const handleClearAll = () => {
+    setQuery('')
+    setSelectedCategory(null)
+    setCurrentPage(1)
+  }
+
+  const handleDownloadPdf = async () => {
+    if (isExportingPdf || filteredResources.length === 0) return
+    setIsExportingPdf(true)
+    try {
+      await exportResourcesToPdf({
+        resources: filteredResources,
+        language,
+        t,
+        selectedCategory,
+        query,
+      })
+    } finally {
+      setIsExportingPdf(false)
+    }
+  }
+
   const handlePageSizeChange = (newSize: PageSize) => {
     setPageSize(newSize)
     setCurrentPage(1)
@@ -102,9 +146,12 @@ export function App() {
       language={language}
       t={t}
       onToggleLanguage={handleToggleLanguage}
+      onDownloadPdf={handleDownloadPdf}
+      isExportingPdf={isExportingPdf}
+      canExportPdf={filteredResources.length > 0}
     >
       <div className="flex flex-col gap-6">
-        <div className="flex flex-col gap-3">
+        <div ref={filterSectionRef} className="flex flex-col gap-3 scroll-mt-4">
           <SearchBar
             query={query}
             onChange={handleQueryChange}
@@ -115,6 +162,8 @@ export function App() {
             categories={CATEGORIES[language]}
             selectedCategory={selectedCategory}
             onSelectCategory={handleSelectCategory}
+            categoryCounts={categoryCounts}
+            totalCount={allResources.length}
             t={t}
           />
         </div>
@@ -153,7 +202,7 @@ export function App() {
                 <ResourceCard
                   resource={resource}
                   t={t}
-                  onSelectCategory={handleSelectCategory}
+                  onSelectCategory={handleCardTagClick}
                 />
               </li>
             ))}
@@ -166,6 +215,16 @@ export function App() {
             <p className="mt-2 text-sm text-slate-600 sm:text-base">
               {t.noResultsDescription}
             </p>
+            {isFiltered && (
+              <button
+                type="button"
+                onClick={handleClearAll}
+                className="mt-5 inline-flex min-h-[48px] items-center justify-center gap-2 rounded-lg bg-sky-800 px-5 py-2.5 text-base font-semibold text-white shadow-sm transition hover:bg-sky-900 focus-visible:outline-3 focus-visible:outline-offset-2 focus-visible:outline-sky-700"
+              >
+                <MaterialIcon name="close" className="h-5 w-5" />
+                <span>{t.clearAllFilters}</span>
+              </button>
+            )}
           </div>
         )}
 

@@ -77,6 +77,12 @@ export function MaterialIcon({ name, className = 'h-5 w-5' }: MaterialIconProps)
           <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z" />
         </svg>
       )
+    case 'health_and_safety':
+      return (
+        <svg aria-hidden="true" className={className} viewBox="0 0 24 24" fill="currentColor">
+          <path d="M10.5 13H8v-3h2.5V7.5h3V10H16v3h-2.5v2.5h-3V13zM12 2L4 5v6.09c0 5.05 3.41 9.76 8 10.91 4.59-1.15 8-5.86 8-10.91V5l-8-3zm6 9.09c0 4-2.55 7.7-6 8.83-3.45-1.13-6-4.82-6-8.83V6.31l6-2.12 6 2.12v4.78z" />
+        </svg>
+      )
     case 'apps':
       return (
         <svg aria-hidden="true" className={className} viewBox="0 0 24 24" fill="currentColor">
@@ -99,6 +105,18 @@ export function MaterialIcon({ name, className = 'h-5 w-5' }: MaterialIconProps)
       return (
         <svg aria-hidden="true" className={className} viewBox="0 0 24 24" fill="currentColor">
           <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+        </svg>
+      )
+    case 'download':
+      return (
+        <svg aria-hidden="true" className={className} viewBox="0 0 24 24" fill="currentColor">
+          <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z" />
+        </svg>
+      )
+    case 'print':
+      return (
+        <svg aria-hidden="true" className={className} viewBox="0 0 24 24" fill="currentColor">
+          <path d="M19 8H5c-1.66 0-3 1.34-3 3v6h4v4h12v-4h4v-6c0-1.66-1.34-3-3-3zm-3 11H8v-5h8v5zm3-7c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm-1-9H6v4h12V3z" />
         </svg>
       )
     default:

@@ -8,6 +8,7 @@ export interface Resource {
   website: string
   email: string
   notes?: string
+  keywords?: string[]
 }
 
 export interface SearchNotice {
@@ -49,4 +50,7 @@ export interface Translations {
   footerAttribution: (lastUpdate: string) => string
   qrButtonLabel: string
   qrCloseLabel: string
+  clearAllFilters: string
+  downloadPdfLabel: string
+  downloadingPdfLabel: string
 }

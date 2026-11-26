@@ -10,6 +10,14 @@ function normalizeText(value: string): string {
     .trim()
 }
 
+function matchesTerm(text: string, term: string): boolean {
+  if (text.includes(term)) return true
+  if (term.length > 3 && term.endsWith('s') && text.includes(term.slice(0, -1))) {
+    return true
+  }
+  return false
+}
+
 export function useSearch(
   resources: Resource[],
   query: string,
@@ -36,42 +44,69 @@ export function useSearch(
 
     const synonymsMap = CATEGORY_SYNONYMS[language] || {}
 
-    // Precompute enriched searchable text for each candidate resource
-    const enrichedResources = categoryFiltered.map((resource) => {
+    // Precompute direct text (name, address, notes, per-org keywords) vs broad category synonyms
+    const enrichedResources = categoryFiltered.map((resource, index) => {
       const nameNorm = normalizeText(resource.name)
       const categoriesNorm = resource.categories.map(normalizeText).join(' ')
       const addressNorm = normalizeText(resource.address || '')
       const notesNorm = normalizeText(resource.notes || '')
+      const keywordsNorm = (resource.keywords || []).map(normalizeText).join(' ')
+
+      const directText = `${nameNorm} ${addressNorm} ${notesNorm} ${keywordsNorm}`
 
       const extraSynonyms = resource.categories
         .flatMap((cat) => synonymsMap[cat] || [])
         .map(normalizeText)
         .join(' ')
 
-      const searchableText = `${nameNorm} ${categoriesNorm} ${addressNorm} ${notesNorm} ${extraSynonyms}`
-      return { resource, searchableText }
+      const searchableText = `${directText} ${categoriesNorm} ${extraSynonyms}`
+      return { resource, index, directText, searchableText }
     })
 
+    const scoreDirectMatches = (directText: string): number => {
+      let score = 0
+      if (directText.includes(normalizedQuery)) score += 3
+      for (const term of searchTerms) {
+        if (matchesTerm(directText, term)) score += 2
+      }
+      return score
+    }
+
     // Try matching all terms (AND query)
-    const fullMatches = enrichedResources.filter(({ searchableText }) =>
-      searchTerms.every((term) => searchableText.includes(term)),
-    )
+    const fullMatches = enrichedResources
+      .filter(({ searchableText }) =>
+        searchTerms.every((term) => matchesTerm(searchableText, term)),
+      )
+      .map((entry) => ({
+        ...entry,
+        directScore: scoreDirectMatches(entry.directText),
+      }))
+      .sort((a, b) => b.directScore - a.directScore || a.index - b.index)
 
     if (fullMatches.length > 0 || searchTerms.length <= 1) {
       return fullMatches.map(({ resource }) => resource)
     }
 
-    // Fall back to matching any term (OR query) sorted by match count
+    // Fall back to matching any term (OR query) sorted by match count then direct match score
     const partialMatches = enrichedResources
-      .map(({ resource, searchableText }) => {
+      .map((entry) => {
         const matchCount = searchTerms.reduce(
-          (count, term) => (searchableText.includes(term) ? count + 1 : count),
+          (count, term) => (matchesTerm(entry.searchableText, term) ? count + 1 : count),
           0,
         )
-        return { resource, matchCount }
+        return {
+          ...entry,
+          matchCount,
+          directScore: scoreDirectMatches(entry.directText),
+        }
       })
       .filter(({ matchCount }) => matchCount > 0)
-      .sort((a, b) => b.matchCount - a.matchCount)
+      .sort(
+        (a, b) =>
+          b.matchCount - a.matchCount ||
+          b.directScore - a.directScore ||
+          a.index - b.index,
+      )
 
     return partialMatches.map(({ resource }) => resource)
   }, [resources, query, language, selectedCategory])

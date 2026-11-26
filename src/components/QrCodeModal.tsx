@@ -38,7 +38,7 @@ export function QrCodeModal({ t }: QrCodeModalProps) {
         type="button"
         onClick={() => dialogRef.current?.showModal()}
         aria-label={t.qrButtonLabel}
-        className="mx-auto mt-2 inline-flex items-center justify-center gap-2 rounded-lg bg-sky-800 px-4 py-2.5 text-sm font-bold text-white shadow-sm transition hover:bg-sky-700 focus-visible:outline-3 focus-visible:outline-offset-2 focus-visible:outline-sky-800"
+        className="inline-flex items-center justify-center gap-2 rounded-lg bg-sky-800 px-4 py-2.5 text-sm font-bold text-white shadow-sm transition hover:bg-sky-700 focus-visible:outline-3 focus-visible:outline-offset-2 focus-visible:outline-sky-800"
       >
         <svg
           aria-hidden="true"

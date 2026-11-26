@@ -2,16 +2,28 @@ import type { ReactNode } from 'react'
 import { LAST_UPDATED, LAST_UPDATED_ES } from '../data/categories'
 import type { Language, Translations } from '../types'
 import { Header } from './Header'
+import { MaterialIcon } from './MaterialIcon'
 import { QrCodeModal } from './QrCodeModal'
 
 interface LayoutProps {
   language: Language
   t: Translations
   onToggleLanguage: () => void
+  onDownloadPdf?: () => void
+  isExportingPdf?: boolean
+  canExportPdf?: boolean
   children: ReactNode
 }
 
-export function Layout({ language, t, onToggleLanguage, children }: LayoutProps) {
+export function Layout({
+  language,
+  t,
+  onToggleLanguage,
+  onDownloadPdf,
+  isExportingPdf = false,
+  canExportPdf = true,
+  children,
+}: LayoutProps) {
   const lastUpdate = language === 'en' ? LAST_UPDATED : LAST_UPDATED_ES
 
   return (
@@ -32,7 +44,22 @@ export function Layout({ language, t, onToggleLanguage, children }: LayoutProps)
           <p className="mt-2 border-t border-slate-200 pt-3 font-semibold text-slate-900">
             {t.footerAttribution(lastUpdate)}
           </p>
-          <QrCodeModal t={t} />
+          <div className="mt-2 flex flex-wrap items-center justify-center gap-3">
+            <QrCodeModal t={t} />
+            {onDownloadPdf && canExportPdf && (
+              <button
+                type="button"
+                onClick={onDownloadPdf}
+                disabled={isExportingPdf}
+                className="inline-flex items-center justify-center gap-2 rounded-lg bg-sky-800 px-4 py-2.5 text-sm font-bold text-white shadow-sm transition hover:bg-sky-700 focus-visible:outline-3 focus-visible:outline-offset-2 focus-visible:outline-sky-800 disabled:cursor-wait disabled:opacity-60"
+              >
+                <MaterialIcon name="print" className="h-5 w-5 shrink-0 text-white" />
+                <span>
+                  {isExportingPdf ? t.downloadingPdfLabel : t.downloadPdfLabel}
+                </span>
+              </button>
+            )}
+          </div>
         </div>
       </footer>
     </div>

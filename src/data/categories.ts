@@ -7,31 +7,33 @@ export const LAST_UPDATED_ES = 'Noviembre 2026'
 export const CATEGORIES = {
   en: [
     'Food Pantries & Meals',
-    'Financial Assistance',
+    'Bills, Rent & Financial Help',
     'Emergency Shelters',
-    'Transitional Living',
+    'Transitional Housing',
     'Housing Assistance',
-    'Clothing and household items',
+    'Clothing, Beds & Household',
     'Medical & Dental',
     'Laundry Assistance',
-    'Mental Health',
-    'Important Contacts',
-    'Hygiene Products',
-    'Social Services'
+    'Mental Health & Counseling',
+    'Helplines & Key Contacts',
+    'Hygiene & Personal Care',
+    'Social Services',
+    'Crisis & Abuse Help',
   ],
   es: [
     'Despensas de Alimentos y Comidas',
-    'Asistencia Financiera',
+    'Facturas, Renta y Ayuda Financiera',
     'Refugios de Emergencia',
     'Vivienda de Transición',
     'Asistencia de Vivienda',
-    'Ropa y artículos del hogar',
+    'Ropa, Camas y Artículos del Hogar',
     'Asistencia Médica y Dental',
     'Asistencia de Lavandería',
-    'Salud Mental',
-    'Contactos Importantes',
-    'Productos de Higiene',
-    'Servicios Sociales'
+    'Salud Mental y Consejería',
+    'Líneas de Ayuda y Contactos Clave',
+    'Higiene y Cuidado Personal',
+    'Servicios Sociales',
+    'Ayuda en Crisis y Abuso',
   ],
 } as const
 
@@ -41,100 +43,121 @@ export const CATEGORY_ICONS: Record<number, string> = {
   2: 'night_shelter',         // Emergency Shelters
   3: 'holiday_village',       // Transitional Living
   4: 'home',                  // Housing Assistance
-  5: 'checkroom',             // Clothing and household items
+  5: 'checkroom',             // Clothing & Household Items
   6: 'medical_services',      // Medical & Dental
   7: 'local_laundry_service', // Laundry Assistance
   8: 'psychology',            // Mental Health
   9: 'contact_phone',         // Important Contacts
   10: 'clean_hands',          // Hygiene Products
   11: 'groups',               // Social Services
+  12: 'health_and_safety',    // Crisis & Abuse Help
 }
 
 export const CATEGORY_SYNONYMS: Record<Language, Record<string, string[]>> = {
   en: {
     'Food Pantries & Meals': [
       'food', 'meals', 'meal', 'pantry', 'pantries', 'groceries', 'grocery',
-      'hungry', 'hunger', 'breakfast', 'lunch', 'dinner', 'food bank', 'food box', 'soup kitchen'
+      'hungry', 'hunger', 'breakfast', 'lunch', 'dinner', 'food bank', 'food box', 'soup kitchen',
+      'free food', 'meals on wheels', 'snap', 'ebt', 'wic', 'food stamps'
     ],
-    'Financial Assistance': [
+    'Bills, Rent & Financial Help': [
       'rent', 'rental', 'utilities', 'utility', 'electric', 'electricity',
-      'water', 'gas', 'power', 'bills', 'bill', 'cash', 'money', 'financial aid', 'payments'
+      'water', 'gas', 'power', 'bills', 'bill', 'cash', 'money', 'financial', 'financial aid', 'payments',
+      'eviction', 'shutoff', 'disconnect', 'mortgage', 'deposit', 'liheap', 'heating', 'propane',
+      'scholarship', 'tuition'
     ],
     'Emergency Shelters': [
-      'shelter', 'shelters', 'homeless', 'homelessness', 'eviction', 'emergency shelter', 'housing', 'unhoused'
+      'shelter', 'shelters', 'homeless', 'homelessness', 'eviction', 'emergency shelter', 'housing', 'unhoused', 'overnight'
     ],
-    'Transitional Living': [
-      'transitional', 'halfway', 'housing', 'apartment', 'home', 'living'
+    'Transitional Housing': [
+      'transitional', 'transitional living', 'halfway', 'housing', 'apartment', 'home', 'living', 'recovery housing'
     ],
     'Housing Assistance': [
-      'housing', 'section 8', 'rent', 'rental', 'apartment', 'home', 'eviction', 'landlord'
+      'housing', 'section 8', 'rent', 'rental', 'apartment', 'home', 'eviction', 'landlord', 'voucher', 'affordable housing', 'low income'
     ],
-    'Clothing and household items': [
-      'clothing', 'clothes', 'shoes', 'coats', 'jackets', 'blankets', 'furniture', 'household', 'bedding', 'mattress'
+    'Clothing, Beds & Household': [
+      'clothing', 'clothes', 'shoes', 'coats', 'jackets', 'blankets', 'furniture', 'household',
+      'bed', 'beds', 'bedding', 'mattress', 'sheets', 'pillows', 'thrift', 'baby', 'maternity', 'crib', 'car seat', 'stroller'
     ],
     'Medical & Dental': [
       'doctor', 'physician', 'clinic', 'dentist', 'dental', 'teeth', 'tooth',
-      'medicine', 'prescription', 'rx', 'pharmacy', 'hospital', 'health', 'pediatrician', 'checkup'
+      'medicine', 'prescription', 'rx', 'pharmacy', 'hospital', 'health', 'pediatrician', 'checkup',
+      'pregnant', 'pregnancy', 'ultrasound', 'std', 'sti', 'vaccine', 'immunization', 'medicaid', 'tefra', 'uninsured', 'free clinic'
     ],
     'Laundry Assistance': [
-      'laundry', 'wash', 'washer', 'dryer', 'clean clothes'
+      'laundry', 'wash', 'washer', 'dryer', 'clean clothes', 'detergent', 'laundromat'
     ],
-    'Mental Health': [
+    'Mental Health & Counseling': [
       'counseling', 'counselor', 'therapy', 'therapist', 'psychologist',
-      'depression', 'anxiety', 'stress', 'behavioral', 'mental health', 'emotional'
+      'depression', 'anxiety', 'stress', 'behavioral', 'mental health', 'emotional',
+      'addiction', 'alcohol', 'drugs', 'substance', 'recovery', 'inpatient', 'trauma', 'grief', 'suicide', 'support group'
     ],
-    'Important Contacts': [
-      'emergency', 'police', 'crisis', 'hotline', 'phone', 'contact'
+    'Helplines & Key Contacts': [
+      'emergency', 'police', 'crisis', 'hotline', 'phone', 'contact', 'important contacts', '211', '988', 'helpline'
     ],
-    'Hygiene Products': [
-      'diapers', 'wipes', 'soap', 'shampoo', 'toilet paper', 'toothpaste', 'toothbrush', 'pads', 'tampons', 'hygiene', 'toiletries'
+    'Hygiene & Personal Care': [
+      'diapers', 'wipes', 'soap', 'shampoo', 'toilet paper', 'toothpaste', 'toothbrush',
+      'pads', 'tampons', 'feminine', 'hygiene', 'toiletries', 'shower', 'showers', 'razor', 'razors', 'deodorant'
     ],
     'Social Services': [
-      'social services', 'case management', 'benefits', 'support', 'community'
+      'social services', 'case management', 'benefits', 'support', 'community', 'family', 'youth', 'teen', 'parenting', 'dhs'
+    ],
+    'Crisis & Abuse Help': [
+      'crisis', 'abuse', 'domestic violence', 'sexual assault', 'assault', 'trafficking',
+      'human trafficking', 'child abuse', 'suicide', '988', 'hotline', 'safety', 'safe', '24/7', 'emergency', 'dating violence'
     ],
   },
   es: {
     'Despensas de Alimentos y Comidas': [
       'comida', 'alimentos', 'alimento', 'despensa', 'despensas', 'hambre',
-      'canasta', 'mandado', 'banco de alimentos', 'lonche', 'cena', 'almuerzo', 'desayuno', 'comedor'
+      'canasta', 'mandado', 'banco de alimentos', 'lonche', 'cena', 'almuerzo', 'desayuno', 'comedor',
+      'comida gratis', 'estampillas', 'cupones de comida', 'snap', 'ebt', 'wic', 'meals on wheels'
     ],
-    'Asistencia Financiera': [
+    'Facturas, Renta y Ayuda Financiera': [
       'renta', 'alquiler', 'luz', 'electricidad', 'agua', 'gas', 'biles',
-      'bil', 'recibo', 'factura', 'pagar', 'dinero', 'pago', 'deuda', 'utilidades', 'servicios'
+      'bil', 'recibo', 'factura', 'facturas', 'pagar', 'dinero', 'pago', 'deuda', 'utilidades', 'servicios',
+      'financiera', 'desalojo', 'corte de luz', 'calefaccion', 'propano', 'liheap', 'beca', 'becas', 'colegiatura'
     ],
     'Refugios de Emergencia': [
-      'refugio', 'albergue', 'sin hogar', 'calle', 'techo', 'emergencia', 'dormir', 'desalojo'
+      'refugio', 'refugios', 'albergue', 'sin hogar', 'calle', 'techo', 'emergencia', 'dormir', 'desalojo', 'homeless'
     ],
     'Vivienda de Transición': [
-      'vivienda', 'transicion', 'cuarto', 'apartamento', 'departamento', 'casa', 'hogar'
+      'vivienda', 'transicion', 'cuarto', 'apartamento', 'departamento', 'casa', 'hogar', 'recuperacion'
     ],
     'Asistencia de Vivienda': [
-      'vivienda', 'seccion 8', 'casa', 'renta', 'apartamento', 'departamento', 'alquiler', 'desalojo', 'hogar'
+      'vivienda', 'seccion 8', 'section 8', 'casa', 'renta', 'apartamento', 'departamento', 'alquiler', 'desalojo', 'hogar', 'bajos ingresos', 'vales'
     ],
-    'Ropa y artículos del hogar': [
+    'Ropa, Camas y Artículos del Hogar': [
       'ropa', 'vestir', 'zapatos', 'calzado', 'cobijas', 'frazadas', 'mantas',
-      'abrigos', 'chamarra', 'chamarras', 'chaqueta', 'muebles', 'cama', 'colchon'
+      'abrigos', 'chamarra', 'chamarras', 'chaqueta', 'muebles', 'cama', 'camas', 'colchon', 'sabanas', 'almohadas',
+      'segunda mano', 'bebe', 'maternidad', 'cuna', 'asiento de carro', 'carriola', 'hogar'
     ],
     'Asistencia Médica y Dental': [
-      'doctor', 'doctora', 'medico', 'medica', 'clinica', 'dentista', 'dientes',
-      'muela', 'medicina', 'medicinas', 'pastillas', 'farmacia', 'salud', 'hospital', 'pediatra', 'enfermo', 'cita'
+      'doctor', 'doctora', 'medico', 'medica', 'clinica', 'dentista', 'dental', 'dientes',
+      'muela', 'medicina', 'medicinas', 'pastillas', 'farmacia', 'salud', 'hospital', 'pediatra', 'enfermo', 'cita',
+      'embarazo', 'embarazada', 'ultrasonido', 'vacunas', 'medicaid', 'tefra', 'sin seguro', 'clinica gratis'
     ],
     'Asistencia de Lavandería': [
-      'lavar', 'lavanderia', 'lavadora', 'ropa sucia'
+      'lavar', 'lavanderia', 'lavadora', 'secadora', 'ropa sucia', 'detergente', 'jabon de ropa'
     ],
-    'Salud Mental': [
-      'psicologo', 'psicologa', 'terapia', 'consejero', 'consejeria',
-      'depresion', 'ansiedad', 'estres', 'emocional', 'mente'
+    'Salud Mental y Consejería': [
+      'psicologo', 'psicologa', 'terapia', 'terapeuta', 'consejero', 'consejeria',
+      'depresion', 'ansiedad', 'estres', 'emocional', 'mente', 'salud mental',
+      'adiccion', 'alcohol', 'drogas', 'recuperacion', 'hospitalizacion', 'trauma', 'duelo', 'suicidio', 'grupo de apoyo'
     ],
-    'Contactos Importantes': [
-      'telefono', 'ayuda', 'emergencia', 'policia', 'linea'
+    'Líneas de Ayuda y Contactos Clave': [
+      'telefono', 'ayuda', 'emergencia', 'policia', 'linea', 'contacto', 'contactos', '211', '988'
     ],
-    'Productos de Higiene': [
+    'Higiene y Cuidado Personal': [
       'panales', 'pañales', 'toallitas', 'jabon', 'shampoo', 'pasta de dientes',
-      'cepillo', 'toallas sanitarias', 'aseo', 'higiene', 'personal'
+      'cepillo', 'toallas sanitarias', 'aseo', 'higiene', 'personal', 'ducha', 'duchas', 'regadera', 'rastrillos', 'desodorante'
     ],
     'Servicios Sociales': [
-      'apoyo', 'social', 'tramites', 'comunidad', 'asistencia'
+      'apoyo', 'social', 'servicios sociales', 'tramites', 'comunidad', 'asistencia', 'familia', 'jovenes', 'adolescentes', 'dhs', 'beneficios'
+    ],
+    'Ayuda en Crisis y Abuso': [
+      'crisis', 'abuso', 'violencia domestica', 'agresion sexual', 'violacion', 'trata de personas',
+      'abuso infantil', 'suicidio', '988', 'linea de crisis', 'seguridad', '24/7', 'emergencia', 'maltrato'
     ],
   },
 }
@@ -223,6 +246,9 @@ export const TRANSLATIONS: Record<Language, Translations> = {
       `Provided by the SVDP Mother Theresa Conference of Rogers, AR - ${lastUpdate}`,
     qrButtonLabel: 'QR Code',
     qrCloseLabel: 'Close',
+    clearAllFilters: 'Clear search & filters',
+    downloadPdfLabel: 'Print Directory',
+    downloadingPdfLabel: 'Preparing PDF...',
   },
   es: {
     siteTitle: 'Sociedad de San Vicente de Paúl - Rogers, AR',
@@ -258,5 +284,8 @@ export const TRANSLATIONS: Record<Language, Translations> = {
       `Proporcionado por la Conferencia Madre Teresa de SVDP de Rogers, AR - ${lastUpdate}`,
     qrButtonLabel: 'Código QR',
     qrCloseLabel: 'Cerrar',
+    clearAllFilters: 'Borrar búsqueda y filtros',
+    downloadPdfLabel: 'Imprimir Directorio',
+    downloadingPdfLabel: 'Preparando PDF...',
   },
 }
